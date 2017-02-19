@@ -1,0 +1,1852 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ul{
+    list-style:none;
+}
+body{
+    font-family:"Microsoft YaHei ", "SimSun","KaiTi";
+    font-size:13px;
+    color:#15428b;
+}
+.lt{
+    float:left
+}
+.rt{
+    float:right;
+}
+/*excel2007框架*/
+#excel2007{
+    width:1300px;
+    height:173px;
+    position:relative;
+    top:0px;
+    /*border:1px solid red;*/
+    margin:0 auto;
+}
+
+/*点击显示按钮*/
+header{
+    height:26px;
+    background:#DFECFC;
+    text-align:center;
+    line-height: 26px;
+    position:relative;
+}
+#office_button{
+    width:40px;
+    height:40px;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat;
+    position:absolute;
+    z-index: 300;
+    top:5px;
+    left:5px;
+}
+#office_button:hover{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -39px 0px;
+}
+#office_button:active{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -78px 0px;
+}
+#office_container{
+    width:100px;
+    height:26px;
+    position:absolute;
+    top:3px;
+    left:34px;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -269px -28px;
+}
+#office_baocun_bg{
+    width:22px;
+    height:22px;
+    position:absolute;
+    left:15px;
+}
+#office_baocun_tubiao{
+    width:22px;
+    height:20px;
+    position:absolute;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -124px -6px;
+}
+#office_chexiaojianru_bg{
+    width:30px;
+    height:22px;
+    position:absolute;
+    left:39px;
+}
+#office_chexiaojianru_tubiao{
+    width:30px;
+    height:22px;
+    position:absolute;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -148px -6px;
+}
+#office_chongfujianru_bg{
+    width:22px;
+    height:22px;
+    position:absolute;
+    left:69px;
+}
+#chongfujianru_tubiao{
+    width:22px;
+    height:22px;
+    position:absolute;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -178px -6px;
+}
+#office_caret{
+    width:14px;
+    height:24px;
+    position:absolute;
+    top:2px;
+    left:140px;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -211px -3px;
+}
+#office_caret:hover{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -239px -3px;
+}
+#office_yincang,#office_suofang,#office_tuichu{
+    width:35px;
+    height:22px;
+    position:absolute;
+}
+#office_tuichu{
+    top:0;
+    right:0;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -338px 0px;
+}
+#office_suofang{
+    top:0;
+    right:35px;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -303px 0px;
+}
+#office_yincang{
+    top:0;
+    right:70px;
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -268px 0px;
+}
+#office_tuichu:hover{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -437px 0px;
+}
+#office_suofang:hover{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -398px 0px;
+}
+#office_yincang:hover{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -475px 0px;
+}
+/*excel2007菜单*/
+#excel2007_office{
+    width:465px;
+    height:444px;
+    border:1px solid #ccc;
+    padding:0 4px;
+    background:#D4E3F6;
+    position:absolute;
+    z-index:200;
+    top:27px;
+    left:0px;
+}
+.excel2007_office{
+    display:none;
+}
+#excel2007_office_1{
+    width:455px;
+    height:399px;
+    border:1px solid #ddd;
+    margin-top:15px;
+    background: #fff;
+}
+/*菜单设置*/
+#excel2007_office_menu{
+    width:130px;
+    height:399px;
+    border:1px solid #ddd;
+    float:left;
+}
+#excel2007_office_menu>li{
+    width:128px;
+    height:44px;
+    line-height:44px;
+    cursor:default;
+    border:1px solid transparent;
+    border-radius: 3px;
+}
+
+#excel2007_office_menu>li>div{
+    float:left;
+    width:40px;
+    height:44px;
+}
+#excel2007_office_menu>li>span{
+    float:left;
+    position:relative;
+    left:66px;
+    border-right:1px solid transparent;
+    width:1px;
+    height:44px;
+}
+#xinjian{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -50px;
+}
+#dakai{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -95px;
+}
+#baocun{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -138px;
+}
+#lingcunwei{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -181px;
+}
+#dayin{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -229px;
+}
+#zhunbei{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -273px;
+}
+#fasong{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -318px;
+}
+#fabu{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -361px;
+}
+#guanbi{
+    background:url(../img/Microsoft-Excel-2007.png) 0px -407px;
+}
+#excel2007_office_menu li b{
+    float:right;
+    width:0px;
+    height:0px;
+    border:4px solid transparent;
+    border-left-color:#1a7bc9;
+    position:relative;
+    top:16px;
+    right:3px;
+}
+#excel2007_office_menu li.active{
+    border-color:#ddd;
+    background-image:linear-gradient(to bottom,#FEFCDC 0%,#FFD359 50%,#FFE8A0 100%);
+    background-image:-webkit-linear-gradient(to bottom,#FEFCDC 0%,#FFD359 50%,#FFE8A0 100%);
+}
+/*菜单面板*/
+#excel2007_office_panel{
+    width:323px;
+    height:100%;
+    border:1px solid #ddd;
+    border-left:none;
+    float:left;
+    background:#fafafa;
+    /*相对定位，配合excel2007_office_panel>div*/
+    position: relative;
+}
+/*绝对定位*/
+#excel2007_office_panel>div{
+    width:100%;
+    height:100%;
+    background:#fafafa;
+    position:absolute;
+}
+#excel2007_office_panel>div:not(.rencent_d){
+    background: #fff;
+    width:98%;
+    height:95%;
+    border:1px solid #ddd;
+    border-radius:3px;
+    position:absolute;
+}
+.show{
+    z-index:1000;
+}
+.show_header{
+    background:#DDE7EE;
+}
+
+.show_body{
+    height:90%;
+    padding:2px;
+    overflow:auto;
+    overflow-x:hidden;
+}
+.show_body>li{
+    width:100%;
+    height:66px;
+    cursor: default;
+    border:1px solid transparent;
+    border-radius:3px;
+}
+#special{
+    height:50px;
+}
+#special>div>b{
+    position:relative;
+    top:10px;
+}
+.show_body>li>div{
+    float:left;
+}
+.normal_font{
+    line-height:20px;
+}
+.show_body>li>div:first-child{
+    width:40px;
+    height:40px;
+}
+.show_body>li>div:last-child{
+    width:85%;
+    margin-top:8px;
+}
+
+#lingcunwei_1{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -42px -45px;
+}
+#lingcunwei_2{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -42px -110px;
+}
+#lingcunwei_3{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -42px -175px;
+}
+#lingcunwei_4{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -42px -240px;
+}
+#lingcunwei_5{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -42px -302px;
+}
+#lingcunwei_6{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -42px -348px;
+}
+#dayin_1{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -88px -45px;
+}
+#dayin_2{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -88px -110px;
+}
+#dayin_3{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -88px -175px;
+}
+#zhunbei_1{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -136px -45px;
+}
+#zhunbei_2{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -136px -110px;
+}
+#zhunbei_3{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -136px -175px;
+}
+#zhunbei_4{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -136px -240px;
+}
+#zhunbei_5{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -136px -305px;
+}
+#zhunbei_6{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -136px -370px;
+}
+#zhunbei_7{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -136px -435px;
+}
+#fasong_1{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -191px -45px;
+}
+#fasong_2{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -191px -110px;
+}
+#fasbu_1{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -241px -45px;
+}
+#fasbu_2{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -241px -110px;
+}
+#fasbu_3{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -241px -175px;
+}
+
+.show_body>li.active{
+    border-color:#ddd;
+    background-image:linear-gradient(to bottom,#FEFCDC 0%,#FFD359 50%,#FFE8A0 100%);
+    background-image:-webkit-linear-gradient(to bottom,#FEFCDC 0%,#FFD359 50%,#FFE8A0 100%);
+}
+#excel2007_office_panel>div>p{
+    font-size:12px;
+    font-weight:bold;
+    padding:10px 5px;
+    border-bottom:1px solid #ddd;
+}
+/*excel2007_office_2下半部分按钮*/
+#excel2007_office_2{
+    padding-left:235px;
+}
+#excel2007_office_2>button{
+    height:24px;
+    line-height:24px;
+    border:1px solid #BFDBFF;
+    border-radius:3px;
+    padding:0 5px;
+    margin-top:2px;
+    background:#EAF2FB;
+    outline:none;
+}
+#excel2007_office_2>button>span{
+    padding:10px;
+}
+#e_xuanxiang{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -520px 10px;
+}
+#tuichu_e{
+    background: url(../img/Microsoft-Excel-2007.png) no-repeat -543px 10px;
+}
+#excel2007_office_2>button:hover{
+    background-image:linear-gradient(to bottom,#FEFCDC 0%,#FFD359 50%,#FFE8A0 100%);
+    background-image:-webkit-linear-gradient(to bottom,#FEFCDC 0%,#FFD359 50%,#FFE8A0 100%);
+}
+/*tabs设置*/
+#tabs{
+    /*配合弹出框做堆叠*/
+    position:relative;
+}
+#tabs_header{
+    padding-top:5px;
+    background:#BFDBFF;
+    border-top:1px solid #B0CFF7;
+}
+#tabs_header>li{
+    display:inline-block;
+    padding:5px 15px;
+    border:1px solid transparent;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom:none;
+    cursor:pointer;
+    position:relative;
+}
+#tabs_header>li:first-child{
+    margin-left:50px;
+}
+/*tab内容部分*/
+#tabs_body>div{
+    width:100%;
+    height:114px;
+    border:1px solid #99BBE8;
+    border-radius:3px;
+    background:#D2DFF0;
+    position:relative;
+    top:-1px;
+    display:none;
+    padding:2px;
+}
+#tabs_header>.tabs_active{
+    border-color:#99BBE8;
+    background:#E5EEFA;
+    z-index:100;
+}
+#tabs_header>li.tabs_show{
+    border-color:#99BBE8;
+    background-image:linear-gradient(to bottom,#cce0f8 40%,#dbd9c6 80%,#e1d2a3 100%);
+    background-image:-webkit-linear-gradient(to bottom,#cce0f8 40%,#dbd9c6 80%,#e1d2a3 100%);
+}
+/*tab_1开始内容*/
+.tabs_container>div{
+    float:left;
+    margin-right:3px;
+    height:100%;
+    background: #D3E2F1;
+    /*border:1px solid red;*/
+    border:1px solid #c5d2df;
+    padding:1px 0px;
+    border-radius:3px;
+}
+.tabs_container>div:hover{
+    background:#E5EEFA;
+}
+.tabs_body_top{
+    margin:2px 3px;
+    border:1px solid transparent;
+    /*overflow: hidden;*/
+    height:80px;
+}
+.tabs_body_bottom{
+    background:#C1D9F1;
+    text-align:center;
+    padding:3px 0;
+    /*margin-top:70px;待定*/
+    -webkit-border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    position:relative;
+}
+
+/*公共部分*/
+.bg-color{
+    border:1px solid transparent;
+    border-radius:2px;
+}
+
+.disabled{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    /*-ms-filter: grayscale(100%);*/
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    /*filter:gray;*/
+    opacity:0.5;
+}
+.bg-color1:hover{
+    background-image:linear-gradient(to bottom,#FEFCDC 0%,#FFD359 30%,#FFE8A0 100%);
+    background-image:-webkit-linear-gradient(to bottom,#FEFCDC 0%,#FFD359 30%,#FFE8A0 100%);
+}
+.caret_bg{
+    width:13px;
+    height:13px;
+    position:absolute;
+    right:2px;
+    top:0px;
+}
+.caret_img{
+    width:13px;
+    height:13px;
+    position:absolute;
+    right:0px;
+    top:0px;
+    background:url(../img/menu-item1.png) no-repeat -99px -137px;
+}
+/*开始*/
+/*剪贴板*/
+.tabs1_1{
+    width:112px;
+}
+/*1剪贴板*/
+#jiantieban-bg1,#jiantieban-tubiao1{
+    width:40px;
+    height:80px;
+}
+#jiantieban-tubiao1{
+    background:url(../img/menu-item1.png) no-repeat -9px -56px;
+}
+
+#jiantieban-bg2,#jiantieban-bg3,#jiantieban-tubiao2,#jiantieban-tubiao3{
+    width:50px;
+    height:22px;
+}
+#jiantieban-tubiao2{
+    background:url(../img/menu-item1.png) no-repeat -52px -58px;
+}
+#jiantieban-tubiao3{
+    background:url(../img/menu-item1.png) no-repeat -52px -80px;
+}
+
+#jiantieban-bg4,#jiantieban-tubiao4{
+    width:60px;
+    height:22px;
+}
+#jiantieban-tubiao4{
+    background:url(../img/menu-item1.png) no-repeat -54px -102px;
+}
+/*字体*/
+.tabs1_2{
+    width:238px;
+}
+#ziti-top{
+    height:26px;
+    margin:8px 0 10px;
+}
+#ziti-songti,#ziti-zihao{
+    height:26px;
+    border:1px solid #abc1de;
+    padding-left:5px;
+    border-right: none;
+    background:#eaf2fb;
+    outline:none;
+}
+#ziti-songti{
+    width:117px;
+}
+#ziti-zihao{
+    width:35px;
+}
+#songti-caret,#zihao-caret{
+    width:14px;
+    height:26px;
+}
+#songti-caret,#zihao-caret{
+    background:url(../img/menu-item1.png) no-repeat -239px -67px;
+}
+#songti-caret:hover,#zihao-caret:hover{
+    background:url(../img/menu-item1.png) no-repeat -253px -67px;
+}
+#ziti-bg1,#ziti-tubiao-7-8,#ziti-tubiao-9-10,#ziti-tubiao-13-14{
+    margin-left:3px;
+}
+#ziti-bg1,#ziti-tubiao1{
+    width:23px;
+    height:22px;
+}
+#ziti-bg2,#ziti-tubiao2{
+    width:22px;
+    height:22px;
+}
+#ziti-tubiao1{
+    background:url(../img/menu-item1.png) no-repeat -303px -67px;
+}
+#ziti-tubiao2{
+    background:url(../img/menu-item1.png) no-repeat -326px -67px;
+}
+#ziti-bottom{
+    height:26px;
+}
+#ziti-bg3,#ziti-bg4,#ziti-tubiao3,#ziti-tubiao4{
+    width:23px;
+    height:22px;
+}
+#ziti-tubiao3{
+    background:url(../img/menu-item1.png) no-repeat -122px -103px;
+}
+#ziti-tubiao4{
+    background:url(../img/menu-item1.png) no-repeat -145px -103px;
+}
+#ziti-tubiao5,#ziti-tubiao7,#ziti-tubiao9,#ziti-tubiao13{
+    width:22px;
+    height:22px;
+}
+#ziti-tubiao11{
+    width:21px;
+    height:22px;
+ }
+#ziti-tubiao12{
+    width:12px;
+    height:22px;
+}
+#ziti-tubiao6,#ziti-tubiao8,#ziti-tubiao10,#ziti-tubiao14{
+    width:13px;
+    height:22px;
+}
+
+#ziti-tubiao5{
+    background:url(../img/menu-item1.png) no-repeat -168px -103px;
+}
+#ziti-tubiao6{
+    background:url(../img/menu-item1.png) no-repeat -189px -103px;
+}
+#ziti-tubiao-5-6:hover{
+    background:url(../img/menu-item1.png) no-repeat -167px -127px;
+}
+#ziti-tubiao7{
+    background:url(../img/menu-item1.png) no-repeat -205px -103px;
+}
+#ziti-tubiao8{
+    background:url(../img/menu-item1.png) no-repeat -227px -103px;
+}
+#ziti-tubiao-7-8:hover{
+    background:url(../img/menu-item1.png) no-repeat -205px -128px;
+}
+#ziti-tubiao9{
+    background:url(../img/menu-item1.png) no-repeat -242px -103px;
+}
+#ziti-tubiao10{
+    background:url(../img/menu-item1.png) no-repeat -264px -103px;
+}
+#ziti-tubiao-9-10:hover{
+    background:url(../img/menu-item1.png) no-repeat -242px -127px;
+}
+#ziti-tubiao11{
+    background:url(../img/menu-item1.png) no-repeat -277px -103px;
+}
+#ziti-tubiao12{
+    background:url(../img/menu-item1.png) no-repeat -298px -103px;
+}
+#ziti-tubiao-11-12:hover{
+    background:url(../img/menu-item1.png) no-repeat -277px -127px;
+}
+#ziti-tubiao13{
+    background:url(../img/menu-item1.png) no-repeat -313px -103px;
+}
+#ziti-tubiao14{
+    background:url(../img/menu-item1.png) no-repeat -335px -103px;
+}
+#ziti-tubiao-13-14:hover{
+    background:url(../img/menu-item1.png) no-repeat -313px -126px;
+}
+/*对齐方式*/
+.tabs1_3{
+    width:228px;
+}
+#duiqifangshi-left>div:first-child{
+    margin:8px 0 10px;
+}
+#duiqifangshi-left>div{
+    height:22px;
+}
+#duiqifangshi-bg1,#duiqifangshi-tubiao1,#duiqifangshi-bg2,#duiqifangshi-tubiao2,
+#duiqifangshi-bg3,#duiqifangshi-tubiao3{
+    width:23px;
+    height:22px;
+}
+#duiqifangshi-bg4,#duiqifangshi-tubiao4{
+    width:32px;
+    height:22px;
+}
+#duiqifangshi-bg4,#duiqifangshi-bg8{
+    margin-left:3px;
+}
+#duiqifangshi-tubiao1{
+    background:url(../img/menu-item1.png) no-repeat -359px -69px;
+}
+#duiqifangshi-tubiao2{
+    background:url(../img/menu-item1.png) no-repeat -382px -69px;
+}
+#duiqifangshi-tubiao3{
+    background:url(../img/menu-item1.png) no-repeat -405px -69px;
+}
+#duiqifangshi-tubiao4{
+    background:url(../img/menu-item1.png) no-repeat -431px -69px;
+}
+#duiqifangshi-bg5,#duiqifangshi-tubiao5,#duiqifangshi-bg6,#duiqifangshi-tubiao6,
+#duiqifangshi-bg7,#duiqifangshi-tubiao7,#duiqifangshi-bg8,#duiqifangshi-tubiao8{
+    width:23px;
+    height:22px;
+}
+#duiqifangshi-bg9,#duiqifangshi-tubiao9{
+    width:22px;
+    height:22px;
+}
+#duiqifangshi-tubiao5{
+    background:url(../img/menu-item1.png) no-repeat -359px -102px;
+}
+#duiqifangshi-tubiao6{
+    background:url(../img/menu-item1.png) no-repeat -382px -102px;
+}
+#duiqifangshi-tubiao7{
+    background:url(../img/menu-item1.png) no-repeat -405px -102px;
+}
+#duiqifangshi-tubiao8{
+    background:url(../img/menu-item1.png) no-repeat -431px -102px;
+}
+#duiqifangshi-tubiao9{
+    background:url(../img/menu-item1.png) no-repeat -454px -102px;
+}
+#duiqifangshi-divide{
+    width: 1px;
+    height: 56px;
+    margin:10px 3px;
+    background: url(../img/menu-item1.png) no-repeat -480px -68px;
+}
+#duiqifangshi-bg10{
+    margin:8px 0;
+}
+#duiqifangshi-bg10,#duiqifangshi-tubiao10{
+    width:74px;
+    height:22px;
+}
+#duiqifangshi-bg11,#duiqifangshi-tubiao11{
+    width:94px;
+    height:22px;
+}
+#duiqifangshi-tubiao10{
+    background:url(../img/menu-item1.png) no-repeat -485px -68px;
+}
+#duiqifangshi-tubiao11{
+    background:url(../img/menu-item1.png) no-repeat -485px -102px;
+}
+/*数字*/
+.tabs1_4{
+    width:138px;
+}
+#shuzi-top{
+    height:26px;
+    margin: 8px 0 10px;
+}
+#shuzi-bottom{
+    height:22px;
+}
+#shuzi-geshi{
+    width:114px;
+    height: 26px;
+    border: 1px solid #abc1de;
+    padding-left: 5px;
+    border-right: none;
+    background: #eaf2fb;
+    outline: none;
+}
+#shuzi-caret{
+    width: 14px;
+    height: 26px;
+    background: url(../img/menu-item1.png) no-repeat -239px -67px;
+}
+#shuzi-caret:hover{
+    background: url(../img/menu-item1.png) no-repeat -253px -67px;
+}
+#shuzi-tubiao1{
+    width:22px;
+    height: 22px;
+}
+#shuzi-tubiao2{
+    width:12px;
+    height: 22px;
+}
+#shuzi-tubiao1{
+    background: url(../img/menu-item1.png) no-repeat -591px -103px;
+}
+#shuzi-tubiao2{
+    background: url(../img/menu-item1.png) no-repeat -613px -103px;
+}
+#shuzi-tubiao-1-2:hover{
+    background: url(../img/menu-item1.png) no-repeat -591px -128px;
+}
+#shuzi-bg3,#shuzi-tubiao3,#shuzi-bg4,#shuzi-tubiao4,#shuzi-bg5,#shuzi-tubiao5{
+    width:23px;
+    height:22px;
+}
+#shuzi-bg5{
+  margin-left:3px;
+ }
+#shuzi-bg6,#shuzi-tubiao6{
+    width:22px;
+    height:22px;
+}
+#shuzi-tubiao3{
+    background: url(../img/menu-item1.png) no-repeat -625px -103px;
+}
+#shuzi-tubiao4{
+    background: url(../img/menu-item1.png) no-repeat -648px -103px;
+}
+#shuzi-tubiao5{
+    background: url(../img/menu-item1.png) no-repeat -674px -103px;
+}
+#shuzi-tubiao6{
+    background: url(../img/menu-item1.png) no-repeat -697px -103px;
+}
+/*样式*/
+.tabs1_5{
+    width:164px;
+}
+#yangshi-bg1,#yangshi-tubiao1{
+    width:52px;
+    height:80px;
+}
+#yangshi-bg2,#yangshi-tubiao2{
+    width:62px;
+    height:80px;
+}
+#yangshi-bg3,#yangshi-tubiao3{
+    width:40px;
+    height:80px;
+}
+#yangshi-tubiao1{
+    background: url(../img/menu-item1.png) no-repeat -732px -56px;
+}
+#yangshi-tubiao2{
+    background: url(../img/menu-item1.png) no-repeat -784px -56px;
+}
+#yangshi-tubiao3{
+    background: url(../img/menu-item1.png) no-repeat -1517px -56px;
+}
+/*单元格*/
+.tabs1_6{
+    width:130px;
+}
+#danyuange-bg1,#danyuange-tubiao1,#danyuange-bg2,#danyuange-tubiao2,#danyuange-bg3,#danyuange-tubiao3{
+    width:40px;
+    height:80px;
+}
+#danyuange-tubiao1{
+    background: url(../img/menu-item1.png) no-repeat -1196px -56px;
+}
+#danyuange-tubiao2{
+    background: url(../img/menu-item1.png) no-repeat -1238px -56px;
+}
+#danyuange-tubiao3{
+    background: url(../img/menu-item1.png) no-repeat -1280px -56px;
+}
+/*编辑*/
+.tabs1_7{
+    width:174px;
+}
+#bianji-bg1,#bianji-tubiao1{
+    width:84px;
+    height:22px;
+}
+#bianji-bg2,#bianji-tubiao2,#bianji-bg3,#bianji-tubiao3{
+    width:60px;
+    height:22px;
+}
+#bianji-bg4,#bianji-tubiao4,#bianji-bg5,#bianji-tubiao5{
+    width:40px;
+    height:80px;
+}
+#bianji-tubiao1{
+    background: url(../img/menu-item1.png) no-repeat -1335px -58px;
+}
+#bianji-tubiao2{
+    background: url(../img/menu-item1.png) no-repeat -1335px -80px;
+}
+#bianji-tubiao3{
+    background: url(../img/menu-item1.png) no-repeat -1335px -102px;
+}
+#bianji-tubiao4{
+    background: url(../img/menu-item1.png) no-repeat -1417px -56px;
+}
+#bianji-tubiao5{
+    background: url(../img/menu-item1.png) no-repeat -1459px -56px;
+}
+/*插入*/
+/*表*/
+.tabs2_1{
+    width:102px;
+}
+#biao-bg1,#biao-tubiao1{
+    width:52px;
+    height:80px;
+}
+#biao-bg2,#biao-tubiao2{
+    width:40px;
+    height:80px;
+}
+#biao-tubiao1{
+    background:url(../img/menu-item2.png) no-repeat -8px -56px;
+}
+#biao-tubiao2{
+    background:url(../img/menu-item2.png) no-repeat -58px -56px;
+}
+/*插图*/
+.tabs2_2{
+    width:190px;
+}
+#chatu-bg1,#chatu-tubiao1,#chatu-bg2,#chatu-tubiao2,#chatu-bg3,#chatu-tubiao3{
+    width:40px;
+    height:80px;
+}
+#chatu-bg4,#chatu-tubiao4{
+    width:60px;
+    height:80px;
+}
+#chatu-tubiao1{
+    background:url(../img/menu-item2.png) no-repeat -112px -56px;
+}
+#chatu-tubiao2{
+    background:url(../img/menu-item2.png) no-repeat -153px -56px;
+}
+#chatu-tubiao3{
+    background:url(../img/menu-item2.png) no-repeat -195px -56px;
+}
+#chatu-tubiao4{
+    background:url(../img/menu-item2.png) no-repeat -235px -56px;
+}
+/*图表*/
+.tabs2_3{
+    width:302px;
+}
+#tubiao-bg1,#tubiao-tubiao1,#tubiao-bg2,#tubiao-tubiao2,#tubiao-bg3,#tubiao-tubiao3,
+#tubiao-bg4,#tubiao-tubiao4,#tubiao-bg5,#tubiao-tubiao5,#tubiao-bg6,#tubiao-tubiao6{
+    width:40px;
+    height:80px;
+}
+#tubiao-bg7,#tubiao-tubiao7{
+    width:52px;
+    height:80px;
+}
+#tubiao-tubiao1{
+    background:url(../img/menu-item2.png) no-repeat -304px -56px;
+}
+#tubiao-tubiao2{
+    background:url(../img/menu-item2.png) no-repeat -346px -56px;
+}
+#tubiao-tubiao3{
+    background:url(../img/menu-item2.png) no-repeat -388px -56px;
+}
+#tubiao-tubiao4{
+    background:url(../img/menu-item2.png) no-repeat -430px -56px;
+}
+#tubiao-tubiao5{
+    background:url(../img/menu-item2.png) no-repeat -472px -56px;
+}
+#tubiao-tubiao6{
+    background:url(../img/menu-item2.png) no-repeat -514px -56px;
+}
+#tubiao-tubiao7{
+    background:url(../img/menu-item2.png) no-repeat -556px -56px;
+}
+/*链接*/
+.tabs2_4{
+    width:50px;
+}
+#charu-lianjie-bg1,#charu-lianjie-tubiao1{
+    width:40px;
+    height:80px;
+}
+#charu-lianjie-tubiao1{
+    background:url(../img/menu-item2.png) no-repeat -620px -56px;
+}
+/*文本*/
+.tabs2_5{
+    width:250px;
+}
+#wenben-bg1,#wenben-tubiao1,#wenben-bg2,#wenben-tubiao2,#wenben-bg3,#wenben-tubiao3,
+#wenben-bg4,#wenben-tubiao4,#wenben-bg5,#wenben-tubiao5,#wenben-bg6,#wenben-tubiao6{
+    width:40px;
+    height:80px;
+}
+#wenben-tubiao1{
+    background:url(../img/menu-item2.png) no-repeat -674px -56px;
+}
+#wenben-tubiao2{
+    background:url(../img/menu-item2.png) no-repeat -715px -56px;
+}
+#wenben-tubiao3{
+    background:url(../img/menu-item2.png) no-repeat -757px -56px;
+}
+#wenben-tubiao4{
+    background:url(../img/menu-item2.png) no-repeat -799px -56px;
+}
+#wenben-tubiao5{
+    background:url(../img/menu-item2.png) no-repeat -842px -56px;
+}
+#wenben-tubiao6{
+    background:url(../img/menu-item2.png) no-repeat -884px -56px;
+}
+/*特殊符号*/
+.tabs2_6{
+    width:70px;
+}
+#teshufuhao-1,#teshufuhao-2{
+    height:20px;
+}
+#teshufuhao-bg1,#teshufuhao-bg2,#teshufuhao-bg3,#teshufuhao-bg4,#teshufuhao-bg5,#teshufuhao-bg6,
+#teshufuhao-tubiao1,#teshufuhao-tubiao2,#teshufuhao-tubiao3,#teshufuhao-tubiao4,#teshufuhao-tubiao5,#teshufuhao-tubiao6{
+    width:20px;
+    height:20px;
+}
+#teshufuhao-bg7,#teshufuhao-tubiao7{
+    width:56px;
+    height:22px;
+}
+#teshufuhao-tubiao1{
+    background:url(../img/menu-item2.png) no-repeat -935px -60px;
+}
+#teshufuhao-tubiao2{
+    background:url(../img/menu-item2.png) no-repeat -956px -60px;
+}
+#teshufuhao-tubiao3{
+    background:url(../img/menu-item2.png) no-repeat -977px -60px;
+}
+#teshufuhao-tubiao4{
+    background:url(../img/menu-item2.png) no-repeat -935px -80px;
+}
+#teshufuhao-tubiao5{
+    background:url(../img/menu-item2.png) no-repeat -956px -80px;
+}
+#teshufuhao-tubiao6{
+    background:url(../img/menu-item2.png) no-repeat -977px -80px;
+}
+#teshufuhao-tubiao7{
+    background:url(../img/menu-item2.png) no-repeat -940px -102px;
+}
+/*页面布局*/
+/*主题*/
+.tabs3_1{
+    width:110px;
+}
+#zhuti-bg1,#zhuti-tubiao1{
+    width:40px;
+    height:80px;
+}
+#zhuti-bg2,#zhuti-tubiao2,#zhuti-bg3,#zhuti-tubiao3,#zhuti-bg4,#zhuti-tubiao4{
+    width:60px;
+    height:22px;
+}
+#zhuti-tubiao1{
+    background:url(../img/menu-item3.png) no-repeat -9px -56px;
+}
+#zhuti-tubiao2{
+    background:url(../img/menu-item3.png) no-repeat -50px -58px;
+}
+#zhuti-tubiao3{
+    background:url(../img/menu-item3.png) no-repeat -50px -80px;
+}
+#zhuti-tubiao4{
+    background:url(../img/menu-item3.png) no-repeat -50px -102px;
+}
+/*页面设置*/
+.tabs3_2{
+    width:338px;
+}
+#yemianshezhi-bg1,#yemianshezhi-tubiao1,#yemianshezhi-bg5,#yemianshezhi-tubiao5,
+#yemianshezhi-bg6,#yemianshezhi-tubiao6{
+    width:40px;
+    height:80px;
+}
+#yemianshezhi-bg2,#yemianshezhi-tubiao2,#yemianshezhi-bg3,#yemianshezhi-tubiao3,
+#yemianshezhi-bg4,#yemianshezhi-tubiao4,#yemianshezhi-bg7,#yemianshezhi-tubiao7{
+    width:52px;
+    height:80px;
+}
+#yemianshezhi-tubiao1{
+    background:url(../img/menu-item3.png) no-repeat -122px -56px;
+  }
+#yemianshezhi-tubiao2{
+    background:url(../img/menu-item3.png) no-repeat -163px -56px;
+}
+#yemianshezhi-tubiao3{
+    background:url(../img/menu-item3.png) no-repeat -216px -56px;
+}
+#yemianshezhi-tubiao4{
+    background:url(../img/menu-item3.png) no-repeat -269px -56px;
+}
+#yemianshezhi-tubiao5{
+    background:url(../img/menu-item3.png) no-repeat -322px -56px;
+}
+#yemianshezhi-tubiao6{
+    background:url(../img/menu-item3.png) no-repeat -364px -56px;
+}
+#yemianshezhi-tubiao7{
+    background:url(../img/menu-item3.png) no-repeat -406px -56px;
+}
+/*调整为合适大小*/
+.tabs3_3{
+    width:154px;
+}
+#tiaozhengweiheshidaxiao>div{
+    height:26px;
+}
+#tiaozhengweiheshidaxiao-tubiao1,#tiaozhengweiheshidaxiao-tubiao3{
+    width:70px;
+    height:26px;
+}
+#tiaozhengweiheshidaxiao-tubiao2,#tiaozhengweiheshidaxiao-tubiao4{
+    width:14px;
+    height:26px;
+}
+#tiaozhengweiheshidaxiao-kuandu,#tiaozhengweiheshidaxiao-gaodu{
+    width:60px;
+    height:26px;
+    border: 1px solid #abc1de;
+    padding-left: 5px;
+    border-right: none;
+    background: #eaf2fb;
+    outline: none;
+}
+#tiaozhengweiheshidaxiao-tubiao1{
+    background:url(../img/menu-item3.png) no-repeat -468px -56px;
+}
+#tiaozhengweiheshidaxiao-tubiao3{
+    background:url(../img/menu-item3.png) no-repeat -468px -82px;
+}
+#tiaozhengweiheshidaxiao-tubiao2,#tiaozhengweiheshidaxiao-tubiao4{
+    background:url(../img/menu-item3.png) no-repeat -598px -24px;
+}
+#tiaozhengweiheshidaxiao-tubiao2:hover,#tiaozhengweiheshidaxiao-tubiao4:hover{
+    background:url(../img/menu-item3.png) no-repeat -652px -24px;
+}
+#tiaozhengweiheshidaxiao-tubiao5{
+    width:80px;
+    height:26px;
+}
+#tiaozhengweiheshidaxiao-tubiao6{
+    width:17px;
+    height:13px;
+}
+#tiaozhengweiheshidaxiao-tubiao7{
+    width:17px;
+    height:13px;
+}
+#tiaozhengweiheshidaxiao-suofangbili{
+    width:47px;
+    height:26px;
+    border: 1px solid #abc1de;
+    padding-left: 5px;
+    border-right: none;
+    background: #eaf2fb;
+    outline: none;
+}
+#tiaozhengweiheshidaxiao-tubiao5{
+    background:url(../img/menu-item3.png) no-repeat -468px -110px;
+}
+#tiaozhengweiheshidaxiao-tubiao6{
+    background:url(../img/menu-item3.png) no-repeat -578px -109px;
+}
+#tiaozhengweiheshidaxiao-tubiao6:hover{
+    background:url(../img/menu-item3.png) no-repeat -595px -109px;
+}
+#tiaozhengweiheshidaxiao-tubiao7{
+    background:url(../img/menu-item3.png) no-repeat -595px -121px;
+}
+#tiaozhengweiheshidaxiao-tubiao7:hover{
+    background:url(../img/menu-item3.png) no-repeat -578px -121px;
+}
+/*工作表选项*/
+.tabs3_4{
+    width:125px;
+}
+#gongzuobiaoxuanxiang-divide{
+    width: 1px;
+    height: 56px;
+    margin: 10px 3px;
+    background: url(../img/menu-item3.png) no-repeat -679px -68px;
+}
+#gongzuobiaoxuanxiang-left,#gongzuobiaoxuanxiang-right{
+    margin-left:3px;
+}
+#gongzuobiaoxuanxiang-left>div:not(:first-child),#gongzuobiaoxuanxiang-right>div:not(:first-child){
+    line-height: 26px;
+}
+#gongzuobiaoxuanxiang-left>div>input,#gongzuobiaoxuanxiang-right>div>input{
+    vertical-align: middle;
+    margin-bottom:3px;
+}
+#gongzuobiaoxuanxiang-tubiao1,#gongzuobiaoxuanxiang-tubiao2{
+    width:50px;
+    height:26px;
+}
+#gongzuobiaoxuanxiang-tubiao1{
+    background:url(../img/menu-item3.png) no-repeat -625px -62px;
+}
+#gongzuobiaoxuanxiang-tubiao2{
+    background:url(../img/menu-item3.png) no-repeat -684px -62px;
+}
+/*排列*/
+.tabs3_5{
+    width:286px;
+}
+#pailie-bg1,#pailie-tubiao1,#pailie-bg2,#pailie-tubiao2,#pailie-bg3,#pailie-tubiao3{
+    width:52px;
+    height:80px;
+}
+#pailie-bg4,#pailie-tubiao4,#pailie-bg5,#pailie-tubiao5,#pailie-bg6,#pailie-tubiao6{
+    width:40px;
+    height:80px;
+}
+#pailie-tubiao1{
+    background:url(../img/menu-item3.png) no-repeat -748px -56px;
+}
+#pailie-tubiao2{
+    background:url(../img/menu-item3.png) no-repeat -800px -56px;
+}
+#pailie-tubiao3{
+    background:url(../img/menu-item3.png) no-repeat -853px -56px;
+}
+#pailie-tubiao4{
+    background:url(../img/menu-item3.png) no-repeat -908px -56px;
+}
+#pailie-tubiao5{
+    background:url(../img/menu-item3.png) no-repeat -949px -56px;
+}
+#pailie-tubiao6{
+    background:url(../img/menu-item3.png) no-repeat -990px -56px;
+}
+/*公式*/
+/*函数库*/
+.tabs4_1{
+    width:487px;
+}
+#hanshuku-bg1,#hanshuku-tubiao1,#hanshuku-bg2,#hanshuku-tubiao2,
+#hanshuku-bg3,#hanshuku-tubiao3,#hanshuku-bg10,#hanshuku-tubiao10{
+    width:52px;
+    height:80px;
+}
+#hanshuku-bg9,#hanshuku-tubiao9{
+    width:62px;
+    height:80px;
+}
+#hanshuku-bg4,#hanshuku-tubiao4,#hanshuku-bg5,#hanshuku-tubiao5,
+#hanshuku-bg6,#hanshuku-tubiao6, #hanshuku-bg7,#hanshuku-tubiao7,
+#hanshuku-bg8,#hanshuku-tubiao8{
+    width:40px;
+    height:80px;
+}
+#hanshuku-tubiao1{
+    background:url(../img/menu-item4.png) no-repeat -9px -56px;
+}
+#hanshuku-divide{
+    width: 1px;
+    height: 56px;
+    margin: 10px 3px;
+    background: url(../img/menu-item4.png) no-repeat -64px -68px;
+}
+#hanshuku-tubiao2{
+    background:url(../img/menu-item4.png) no-repeat -70px -56px;
+}
+#hanshuku-tubiao3{
+    background:url(../img/menu-item4.png) no-repeat -122px -56px;
+}
+#hanshuku-tubiao4{
+    background:url(../img/menu-item4.png) no-repeat -176px -56px;
+}
+#hanshuku-tubiao5{
+    background:url(../img/menu-item4.png) no-repeat -218px -56px;
+}
+#hanshuku-tubiao6{
+    background:url(../img/menu-item4.png) no-repeat -260px -56px;
+}
+#hanshuku-tubiao7{
+    background:url(../img/menu-item4.png) no-repeat -302px -56px;
+}
+#hanshuku-tubiao8{
+    background:url(../img/menu-item4.png) no-repeat -343px -56px;
+}
+#hanshuku-tubiao9{
+    background:url(../img/menu-item4.png) no-repeat -385px -56px;
+}
+#hanshuku-tubiao10{
+    background:url(../img/menu-item4.png) no-repeat -447px -56px;
+}
+/*定义的名称*/
+.tabs4_2{
+    width:170px;
+}
+#dingyidemingcheng-bg1,#dingyidemingcheng-tubiao1{
+    width:40px;
+    height:80px;
+}
+#dingyidemingcheng-bg2,#dingyidemingcheng-tubiao2,#dingyidemingcheng-bg3,#dingyidemingcheng-tubiao3{
+    width:84px;
+    height:22px;
+}
+#dingyidemingcheng-bg4,#dingyidemingcheng-tubiao4{
+    width:120px;
+    height:22px;
+}
+#dingyidemingcheng-tubiao1{
+    background:url(../img/menu-item4.png) no-repeat -512px -56px;
+}
+#dingyidemingcheng-tubiao2{
+    background:url(../img/menu-item4.png) no-repeat -553px -58px;
+}
+#dingyidemingcheng-tubiao3{
+    background:url(../img/menu-item4.png) no-repeat -553px -80px;
+}
+#dingyidemingcheng-tubiao4{
+    background:url(../img/menu-item4.png) no-repeat -553px -102px;
+}
+/*公式审核*/
+.tabs4_3{
+    width:263px;
+}
+#gongshishenhe-bg1,#gongshishenhe-tubiao1,#gongshishenhe-bg2,#gongshishenhe-tubiao2{
+    width:110px;
+    height:22px;
+}
+#gongshishenhe-bg3,#gongshishenhe-tubiao3,#gongshishenhe-bg5,#gongshishenhe-tubiao5{
+    width:84px;
+    height:22px;
+}
+#gongshishenhe-bg4,#gongshishenhe-tubiao4,#gongshishenhe-bg6,#gongshishenhe-tubiao6{
+    width:74px;
+    height:22px;
+}
+#gongshishenhe-divide{
+    width: 1px;
+    height: 56px;
+    margin: 10px 3px;
+    background: url(../img/menu-item4.png) no-repeat -64px -68px;
+}
+#gongshishenhe-bg7,#gongshishenhe-tubiao7{
+    width:52px;
+    height:80px;
+}
+#gongshishenhe-tubiao1{
+    background: url(../img/menu-item4.png) no-repeat -686px -60px;
+}
+#gongshishenhe-tubiao2{
+    background: url(../img/menu-item4.png) no-repeat -686px -84px;
+}
+#gongshishenhe-tubiao3{
+    background: url(../img/menu-item4.png) no-repeat -686px -110px;
+}
+#gongshishenhe-tubiao4{
+    background: url(../img/menu-item4.png) no-repeat -796px -60px;
+}
+#gongshishenhe-tubiao5{
+    background: url(../img/menu-item4.png) no-repeat -796px -84px;
+}
+#gongshishenhe-tubiao6{
+    background: url(../img/menu-item4.png) no-repeat -796px -110px;
+}
+#gongshishenhe-tubiao7{
+    background: url(../img/menu-item4.png) no-repeat -888px -56px;
+}
+/*计算*/
+.tabs4_4{
+    width:148px;
+}
+#jisuan-bg1,#jisuan-tubiao1{
+    width:52px;
+    height:80px;
+}
+#jisuan-bg2,#jisuan-tubiao2{
+    width:74px;
+    height:22px;
+}
+#jisuan-bg2{
+    margin:10px 0;
+}
+#jisuan-bg3,#jisuan-tubiao3{
+    width:86px;
+    height:22px;
+}
+#jisuan-tubiao1{
+    background: url(../img/menu-item4.png) no-repeat -953px -56px;
+}
+#jisuan-tubiao2{
+     background: url(../img/menu-item4.png) no-repeat -1007px -70px;
+ }
+#jisuan-tubiao3{
+    background: url(../img/menu-item4.png) no-repeat -1005px -102px;
+}
+/*数据*/
+/*获取外部数据*/
+.tabs5_1{
+    width:275px;
+}
+#huoquwaibushuju-bg1,#huoquwaibushuju-tubiao1{
+    width:60px;
+    height:80px;
+}
+#huoquwaibushuju-bg2,#huoquwaibushuju-tubiao2,#huoquwaibushuju-bg3,#huoquwaibushuju-tubiao3{
+    width:40px;
+    height:80px;
+}
+#huoquwaibushuju-bg4,#huoquwaibushuju-tubiao4{
+    width:66px;
+    height:80px;
+}
+#huoquwaibushuju-divide{
+    width:1px;
+    height:56px;
+    margin:10px 3px;
+    background:url(../img/menu-item5.png) no-repeat -220px -68px;
+}
+#huoquwaibushuju-bg5,#huoquwaibushuju-tubiao5{
+    width:52px;
+    height:80px;
+}
+#huoquwaibushuju-tubiao1{
+    background:url(../img/menu-item5.png) no-repeat -8px -56px;
+}
+#huoquwaibushuju-tubiao2{
+    background:url(../img/menu-item5.png) no-repeat -69px -56px;
+}
+#huoquwaibushuju-tubiao3{
+    background:url(../img/menu-item5.png) no-repeat -110px -56px;
+}
+#huoquwaibushuju-tubiao4{
+    background:url(../img/menu-item5.png) no-repeat -152px -56px;
+}
+#huoquwaibushuju-tubiao5{
+    background:url(../img/menu-item5.png) no-repeat -225px -56px;
+}
+/*连接*/
+.tabs5_2{
+    width:136px;
+}
+#shuju-lianjie-bg1,#shuju-lianjie-tubiao1{
+     width:52px;
+     height:80px;
+ }
+#shuju-lianjie-bg2,#shuju-lianjie-tubiao2,#shuju-lianjie-bg3,#shuju-lianjie-tubiao3{
+    width:50px;
+    height:22px;
+}
+#shuju-lianjie-bg4,#shuju-lianjie-tubiao4{
+    width:74px;
+    height:22px;
+}
+#shuju-lianjie-tubiao1{
+    background:url(../img/menu-item5.png) no-repeat -290px -56px;
+}
+#shuju-lianjie-tubiao2{
+    background:url(../img/menu-item5.png) no-repeat -342px -58px;
+}
+#shuju-lianjie-tubiao3{
+    background:url(../img/menu-item5.png) no-repeat -342px -80px;
+}
+#shuju-lianjie-tubiao4{
+    background:url(../img/menu-item5.png) no-repeat -342px -102px;
+}
+/*排序和筛选*/
+.tabs5_3{
+    width:193px;
+}
+#paixuheshaixuan-bg1,#paixuheshaixuan-tubiao1,#paixuheshaixuan-bg2,#paixuheshaixuan-tubiao2{
+    width:22px;
+    height:22px;
+}
+#paixuheshaixuan-bg1{
+    margin:8px 0 15px 0;
+}
+#paixuheshaixuan-bg3,#paixuheshaixuan-tubiao3,#paixuheshaixuan-bg4,#paixuheshaixuan-tubiao4{
+    width:40px;
+    height:80px;
+}
+#paixuheshaixuan-bg5,#paixuheshaixuan-tubiao5,#paixuheshaixuan-bg7,#paixuheshaixuan-tubiao7{
+    width:50px;
+    height:22px;
+}
+#paixuheshaixuan-bg6,#paixuheshaixuan-tubiao6{
+    width:74px;
+    height:22px;
+}
+#paixuheshaixuan-tubiao1{
+    background:url(../img/menu-item5.png) no-repeat -426px -70px;
+}
+#paixuheshaixuan-tubiao2{
+    background:url(../img/menu-item5.png) no-repeat -426px -104px;
+}
+#paixuheshaixuan-tubiao3{
+    background:url(../img/menu-item5.png) no-repeat -449px -56px;
+}
+#paixuheshaixuan-divide{
+    width:1px;
+    height:56px;
+    margin:10px 3px;
+    background:url(../img/menu-item5.png) no-repeat -220px -68px;
+}
+#paixuheshaixuan-tubiao4{
+    background:url(../img/menu-item5.png) no-repeat -499px -56px;
+}
+#paixuheshaixuan-tubiao5{
+     background:url(../img/menu-item5.png) no-repeat -542px -58px;
+ }
+#paixuheshaixuan-tubiao6{
+    background:url(../img/menu-item5.png) no-repeat -542px -80px;
+}
+#paixuheshaixuan-tubiao7{
+    background:url(../img/menu-item5.png) no-repeat -542px -102px;
+}
+/*数据工具*/
+.tabs5_4{
+    width:246px;
+}
+#shujugongju-bg1,#shujugongju-tubiao1,#shujugongju-bg2,#shujugongju-tubiao2{
+    width:40px;
+    height:80px;
+}
+#shujugongju-bg3,#shujugongju-tubiao3,#shujugongju-bg4,#shujugongju-tubiao4,#shujugongju-bg5,#shujugongju-tubiao5{
+    width:52px;
+    height:80px;
+}
+#shujugongju-tubiao1{
+    background:url(../img/menu-item5.png) no-repeat -627px -56px;
+}
+#shujugongju-tubiao2{
+    background:url(../img/menu-item5.png) no-repeat -669px -56px;
+}
+#shujugongju-tubiao3{
+    background:url(../img/menu-item5.png) no-repeat -709px -56px;
+}
+#shujugongju-tubiao4{
+    background:url(../img/menu-item5.png) no-repeat -760px -56px;
+}
+#shujugongju-tubiao5{
+    background:url(../img/menu-item5.png) no-repeat -814px -56px;
+}
+/*分级显示*/
+.tabs5_5{
+    width:250px;
+}
+#fenjixianshi-bg1,#fenjixianshi-tubiao1{
+    width:40px;
+    height:80px;
+}
+#fenjixianshi-bg2,#fenjixianshi-tubiao2,#fenjixianshi-bg3,#fenjixianshi-tubiao3{
+    width:52px;
+    height:80px;
+}
+#fenjixianshi-bg4,#fenjixianshi-tubiao4,#fenjixianshi-bg5,#fenjixianshi-tubiao5{
+    width:96px;
+    height:22px;
+}
+#fenjixianshi-tubiao1{
+    background:url(../img/menu-item5.png) no-repeat -880px -56px;
+}
+#fenjixianshi-tubiao2{
+    background:url(../img/menu-item5.png) no-repeat -919px -56px;
+}
+#fenjixianshi-tubiao3{
+    background:url(../img/menu-item5.png) no-repeat -972px -56px;
+}
+#fenjixianshi-tubiao4{
+    background:url(../img/menu-item5.png) no-repeat -1026px -58px;
+}
+#fenjixianshi-tubiao5{
+    background:url(../img/menu-item5.png) no-repeat -1026px -80px;
+}
+/*审阅*/
+/*校对*/
+.tabs6_1{
+    width:206px;
+}
+#jiaodui-bg1,#jiaodui-tubiao1,#jiaodui-bg2,#jiaodui-tubiao2,#jiaodui-bg3,#jiaodui-tubiao3{
+    width:52px;
+    height:80px;
+}
+#jiaodui-bg4,#jiaodui-tubiao4{
+    width:40px;
+    height:80px;
+}
+#jiaodui-tubiao1{
+    background:url(../img/menu-item6.png) no-repeat -9px -56px;
+}
+#jiaodui-tubiao2{
+    background:url(../img/menu-item6.png) no-repeat -61px -56px;
+}
+#jiaodui-tubiao3{
+    background:url(../img/menu-item6.png) no-repeat -114px -56px;
+}
+#jiaodui-tubiao4{
+    background:url(../img/menu-item6.png) no-repeat -167px -56px;
+}
+/*中文简繁转换*/
+.tabs6_2{
+    width:84px;
+}
+#zhongwenjianfanzhuanhuan-bg1,#zhongwenjianfanzhuanhuan-tubiao1,#zhongwenjianfanzhuanhuan-bg2,#zhongwenjianfanzhuanhuan-tubiao2{
+    width:60px;
+    height:22px;
+}
+#zhongwenjianfanzhuanhuan-bg3,#zhongwenjianfanzhuanhuan-tubiao3{
+    width:74px;
+    height:22px;
+}
+#zhongwenjianfanzhuanhuan-tubiao1{
+    background:url(../img/menu-item6.png) no-repeat -221px -58px;
+}
+#zhongwenjianfanzhuanhuan-tubiao2{
+    background:url(../img/menu-item6.png) no-repeat -221px -80px;
+}
+#zhongwenjianfanzhuanhuan-tubiao3{
+    background:url(../img/menu-item6.png) no-repeat -221px -102px;
+}
+/*批注*/
+.tabs6_3{
+    width:284px;
+}
+#pizhu-bg1,#pizhu-tubiao1{
+    width:52px;
+    height:80px;
+}
+#pizhu-bg2,#pizhu-tubiao2,#pizhu-bg3,#pizhu-tubiao3,#pizhu-bg4,#pizhu-tubiao4{
+    width:40px;
+    height:80px;
+}
+#pizhu-bg5,#pizhu-tubiao5{
+    width:102px;
+    height:22px;
+}
+#pizhu-bg6,#pizhu-tubiao6{
+    width:96px;
+    height:22px;
+}
+#pizhu-bg7,#pizhu-tubiao7{
+    width:74px;
+    height:22px;
+}
+#pizhu-tubiao1{
+    background:url(../img/menu-item6.png) no-repeat -305px -56px;
+}
+#pizhu-tubiao2{
+    background:url(../img/menu-item6.png) no-repeat -359px -56px;
+}
+#pizhu-tubiao3{
+    background:url(../img/menu-item6.png) no-repeat -401px -56px;
+}
+#pizhu-tubiao4{
+    background:url(../img/menu-item6.png) no-repeat -443px -56px;
+}
+#pizhu-tubiao5{
+    background:url(../img/menu-item6.png) no-repeat -485px -58px;
+}
+#pizhu-tubiao6{
+    background:url(../img/menu-item6.png) no-repeat -485px -80px;
+}
+#pizhu-tubiao7{
+    background:url(../img/menu-item6.png) no-repeat -485px -102px;
+}
+/*更改*/
+.tabs6_4{
+    width:260px;
+}
+#genggai-bg1,#genggai-tubiao1,#genggai-bg3,#genggai-tubiao3{
+    width:40px;
+    height:80px;
+}
+#genggai-bg2,#genggai-tubiao2{
+    width:50px;
+    height:80px;
+}
+#genggai-bg4,#genggai-tubiao4,#genggai-bg5,#genggai-tubiao5{
+    width:120px;
+    height:22px;
+}
+#genggai-bg6,#genggai-tubiao6{
+    width:60px;
+    height:22px;
+}
+#genggai-tubiao1{
+    background:url(../img/menu-item6.png) no-repeat -600px -56px;
+}
+#genggai-tubiao2{
+    background:url(../img/menu-item6.png) no-repeat -640px -56px;
+}
+#genggai-tubiao3{
+    background:url(../img/menu-item6.png) no-repeat -691px -56px;
+}
+#genggai-tubiao4{
+    background:url(../img/menu-item6.png) no-repeat -733px -58px;
+}
+#genggai-tubiao5{
+    background:url(../img/menu-item6.png) no-repeat -733px -80px;
+}
+#genggai-tubiao6{
+    background:url(../img/menu-item6.png) no-repeat -733px -102px;
+}
+/*视图*/
+/*工作簿视图*/
+.tabs7_1{
+    width:241px;
+}
+#gongzuobushitu-bg1,#gongzuobushitu-tubiao1,#gongzuobushitu-bg3,
+#gongzuobushitu-tubiao3,#gongzuobushitu-bg4,#gongzuobushitu-tubiao4{
+    width:40px;
+    height:80px;
+}
+#gongzuobushitu-divide{
+    width:1px;
+    height:56px;
+    margin:10px 3px;
+    background:url(../img/menu-item7.png) no-repeat -148px -68px;
+}
+#gongzuobushitu-bg2,#gongzuobushitu-tubiao2,#gongzuobushitu-bg5,#gongzuobushitu-tubiao5{
+    width:52px;
+    height:80px;
+}
+#gongzuobushitu-tubiao1{
+    background:url(../img/menu-item7.png) no-repeat -9px -56px;
+}
+#gongzuobushitu-tubiao2{
+    background:url(../img/menu-item7.png) no-repeat -50px -56px;
+}
+#gongzuobushitu-tubiao3{
+    background:url(../img/menu-item7.png) no-repeat -103px -56px;
+}
+#gongzuobushitu-tubiao4{
+    background:url(../img/menu-item7.png) no-repeat -154px -56px;
+}
+#gongzuobushitu-tubiao5{
+    background:url(../img/menu-item7.png) no-repeat -195px -56px;
+}
+/*显示/隐藏*/
+.tabs7_2{
+    width:145px;
+}
+#xianshi-yincang-left>div:not(:first-child),#xianshi-yincang-right>div:not(:first-child){
+    line-height: 26px;
+}
+#xianshi-yincang-right{
+    margin-left:10px;
+}
+#biaochi,#wanggexian,#xiaoxilan,#bianjilan,#biaoti{
+    vertical-align: middle;
+    margin-bottom:4px;
+}
+/*显示比例*/
+.tabs7_3{
+    width:154px;
+}
+#xianshibili-bg1,#xianshibili-tubiao1,#xianshibili-bg3,#xianshibili-tubiao3{
+    width:52px;
+    height:80px;
+}
+#xianshibili-bg2,#xianshibili-tubiao2{
+    width:40px;
+    height:80px;
+}
+#xianshibili-tubiao1{
+    background:url(../img/menu-item7.png) no-repeat -259px -56px;
+}
+#xianshibili-tubiao2{
+    background:url(../img/menu-item7.png) no-repeat -312px -56px;
+}
+#xianshibili-tubiao3{
+    background:url(../img/menu-item7.png) no-repeat -354px -56px;
+}
+/*窗口*/
+.tabs7_4{
+    width:450px;
+}
+#chuangko-bg1,#chuangko-tubiao1,#chuangko-bg2,#chuangko-tubiao2,
+#chuangko-bg3,#chuangko-tubiao3,#chuangko-bg11,#chuangko-tubiao11{
+    width:52px;
+    height:80px;
+}
+#chuangko-bg4,#chuangko-tubiao4,#chuangko-bg5,#chuangko-tubiao5{
+    width:50px;
+    height:22px;
+}
+#chuangko-bg6,#chuangko-tubiao6,#chuangko-bg7,#chuangko-tubiao7,#chuangko-bg8,#chuangko-tubiao8{
+    width:74px;
+    height:22px;
+}
+#chuangko-bg9,#chuangko-tubiao9{
+    width:96px;
+    height:22px;
+}
+#chuangko-divide1,#chuangko-divide2{
+    width:1px;
+    height:56px;
+    margin:10px 3px;
+    background:url(../img/menu-item7.png) no-repeat -148px -68px;
+}
+#chuangko-bg10,#chuangko-tubiao10{
+    width:40px;
+    height:80px;
+}
+#chuangko-tubiao1{
+    background:url(../img/menu-item7.png) no-repeat -418px -56px;
+ }
+#chuangko-tubiao2{
+    background:url(../img/menu-item7.png) no-repeat -471px -56px;
+}
+#chuangko-tubiao3{
+    background:url(../img/menu-item7.png) no-repeat -524px -56px;
+}
+#chuangko-tubiao4{
+    background:url(../img/menu-item7.png) no-repeat -577px -60px;
+}
+#chuangko-tubiao5{
+    background:url(../img/menu-item7.png) no-repeat -577px -85px;
+}
+#chuangko-tubiao6{
+    background:url(../img/menu-item7.png) no-repeat -577px -110px;
+}
+#chuangko-tubiao7{
+    background:url(../img/menu-item7.png) no-repeat -659px -60px;
+}
+#chuangko-tubiao8{
+    background:url(../img/menu-item7.png) no-repeat -659px -85px;
+}
+#chuangko-tubiao9{
+    background:url(../img/menu-item7.png) no-repeat -659px -110px;
+}
+#chuangko-tubiao10{
+    background:url(../img/menu-item7.png) no-repeat -765px -56px;
+}
+#chuangko-tubiao11{
+    background:url(../img/menu-item7.png) no-repeat -807px -56px;
+}
+/*宏*/
+.tabs7_5{
+    width:50px;
+}
+#hong-bg1,#hong-tubiao1{
+    width:40px;
+    height:80px;
+}
+#hong-tubiao1{
+    background:url(../img/menu-item7.png) no-repeat -872px -56px;
+}
+/*加载项*/
+.tabs8_1{
+    width:82px;
+}
+#caidanmingling-teshufuhao-bg1,#caidanmingling-chuangko-tubiao1{
+    width:72px;
+    height:22px;
+}
+#caidanmingling-chuangko-tubiao1{
+    background:url(../img/menu-item8.png) no-repeat -10px -58px;
+}

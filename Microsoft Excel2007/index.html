@@ -1,0 +1,1530 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft Excel</title>
+    <link rel="stylesheet" href="css/excel2007.css">
+</head>
+<body>
+    <div id="excel2007">
+        <!--excel2007头部-->
+        <header>
+            Book1 - Microsoft Excel
+            <!--excel2007 office点击显示按钮-->
+            <div id="office_button"></div>
+            <div id="office_container">
+                <!--保存按钮-->
+                <div id="office_baocun_bg" class="bg-color">
+                    <div id="office_baocun_tubiao"></div>
+                </div>
+                <!--撤销键入-->
+                <div id="office_chexiaojianru_bg" class="bg-color">
+                    <div id="office_chexiaojianru_tubiao"></div>
+                </div>
+                <!--重复键入-->
+                <div id="office_chongfujianru_bg" class="bg-color">
+                    <div id="chongfujianru_tubiao"></div>
+                </div>
+            </div>
+            <!--office_caret-->
+            <div id="office_caret"></div>
+            <!--隐藏键-->
+            <div id="office_yincang"></div>
+            <!--缩放键-->
+            <div id="office_suofang"></div>
+            <!--退出键-->
+            <div id="office_tuichu"></div>
+        </header>
+        <!--excel2007 office显示栏-->
+        <div id="excel2007_office" class="excel2007_office">
+            <div id="excel2007_office_1">
+                <ul id="excel2007_office_menu">
+                    <li><div id="xinjian"></div>新建(N)</li>
+                    <li><div id="dakai"></div>打开(O)</li>
+                    <li><div id="baocun"></div>保存(S)</li>
+                    <li><div id="lingcunwei"></div>另存为(A)<span ></span><b></b></li>
+                    <li><div id="dayin"></div>打印(P)<span></span><b></b></li>
+                    <li><div id="zhunbei"></div>准备(E)<span ></span><b></b></li>
+                    <li><div id="fasong"></div>发送(D)<span></span><b></b></li>
+                    <li><div id="fabu"></div>发布(U)<span></span><b></b></li>
+                    <li><div id="guanbi"></div>关闭(C)</li>
+                </ul>
+                <div id="excel2007_office_panel">
+                    <!--第一个面板-->
+                    <div class="rencent_d">
+                        <p>最近使用文档</p>
+                    </div>
+                    <!--第二个面板-->
+                    <div class="rencent_d">
+                        <p>最近使用文档</p>
+                    </div>
+                    <!--第三个面板-->
+                    <div class="rencent_d">
+                        <p>最近使用文档</p>
+                    </div>
+                    <!--第四个面板-->
+                    <div>
+                        <p class="show_header">保存文档副本</p>
+                        <ul class="show_body">
+                            <li class="active">
+                                <div id="lingcunwei_1"></div>
+                                <div>
+                                    <b>Excel 工作簿(X)</b>
+                                    <p class="normal_font"> 以默认文件格式保存工作簿。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="lingcunwei_2"></div>
+                                <div>
+                                    <b>启动宏的Excel 工作簿(M)</b>
+                                    <p class="normal_font">将工作簿保存为基于XML且启用宏的文件格式。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="lingcunwei_3"></div>
+                                <div>
+                                    <b>Excel 二进制工作簿(B)</b>
+                                    <p class="normal_font">将工作簿保存为优化的二进制文件格式以提高加载和保存速度。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="lingcunwei_4"></div>
+                                <div>
+                                    <b>Excel 97-2003 工作簿(9)</b>
+                                    <p class="normal_font">保存一个与Excel 97-2003 完全兼容的工作簿副本。</p>
+                                </div>
+                            </li>
+                            <li id="special">
+                                <div id="lingcunwei_5"></div>
+                                <div>
+                                    <b>查找其他文件格式的加载项(F)</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="lingcunwei_6"></div>
+                                <div>
+                                    <b>其他格式(O)</b>
+                                    <p class="normal_font">打开"另存为"对话框，从所有可用文件类型中进行选择。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--第五个面板-->
+                    <div>
+                        <p class="show_header">预览并打印文档</p>
+                        <ul class="show_body">
+                            <li>
+                                <div id="dayin_1"></div>
+                                <div>
+                                    <b>打印（P）</b>
+                                    <p class="normal_font">打印前选择打印机、打印份数及其他打印选项。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="dayin_2"></div>
+                                <div>
+                                    <b>快速打印（Q）</b>
+                                    <p class="normal_font">不能更改，直接将文档发送到默认打印机。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="dayin_3"></div>
+                                <div>
+                                    <b>打印预览（V）</b>
+                                    <p class="normal_font">打印前预览并更改页面。</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--第六个面板-->
+                    <div>
+                        <p class="show_header">准备要分发的文档</p>
+                        <ul class="show_body">
+                            <li>
+                                <div id="zhunbei_1"></div>
+                                <div>
+                                    <b>属性（P）</b>
+                                    <p class="normal_font">查看和编辑文档属性，如标题、作者和关键字。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="zhunbei_2"></div>
+                                <div>
+                                    <b>检查文档（I）</b>
+                                    <p class="normal_font">检查文档中是否有隐藏的元数据活个人信息。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="zhunbei_3"></div>
+                                <div>
+                                    <b>加密文档（E）</b>
+                                    <p class="normal_font">通过添加加密来增强文档的安全性。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="zhunbei_4"></div>
+                                <div>
+                                    <b>限制权限（R）</b>
+                                    <p class="normal_font">授予用户访问权限，同时限制其编辑、复制和打印能力。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="zhunbei_5"></div>
+                                <div>
+                                    <b>添加数字签名（S）</b>
+                                    <p class="normal_font">通过添加不可见的数字签名来确保文档的完整性。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="zhunbei_6"></div>
+                                <div>
+                                    <b>标记为最终状态（F）</b>
+                                    <p class="normal_font">让读者知晓文档的最终版本，并将其设为只读的。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="zhunbei_7"></div>
+                                <div>
+                                    <b>运行兼容性检查器（C）</b>
+                                    <p class="normal_font">检查是否有早期版本Excel不支持的功能。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--第七个面板-->
+                    <div>
+                        <p class="show_header">将文档副本发送给其他人</p>
+                        <ul class="show_body">
+                            <li>
+                                <div id="fasong_1"></div>
+                                <div>
+                                    <b>电子邮件（E）</b>
+                                    <p class="normal_font">以电子邮件附件方式发送文档副本。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="fasong_2"></div>
+                                <div>
+                                    <b>Internet传真（X）</b>
+                                    <p class="normal_font">使用Internet传真服务发送文档。</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--第八个面板-->
+                    <div class="show">
+                        <p class="show_header">将文档分发给其他人员</p>
+                        <ul class="show_body">
+                            <li>
+                                <div id="fasbu_1"></div>
+                                <div>
+                                    <b>Excel Services(S)</b>
+                                    <p class="normal_font">保存以用于Excel Services，指定浏览器中现实的内容并设置选项。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="fasbu_2"></div>
+                                <div>
+                                    <b>文档管理服务器(D)</b>
+                                    <p class="normal_font">通过将工作簿保存到文档管理服务器来实现共享。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="fasbu_3"></div>
+                                <div>
+                                    <b>创建文档工作区(C)</b>
+                                    <p class="normal_font">为工作簿创建新网站并保持本地副本同步。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--第九个面板-->
+                    <div class="rencent_d">
+                        <p>最近使用文档</p>
+                    </div>
+                </div>
+            </div>
+            <!--下部分按钮-->
+            <div id="excel2007_office_2">
+                <button><span id="e_xuanxiang"></span>Excel选项(I)</button>
+                <button><span id="tuichu_e"></span>退出Excel(X)</button>
+            </div>
+        </div>
+        <!--标签页-->
+        <div id="tabs">
+            <ul id="tabs_header">
+                <li class="tabs_active">开始</li>
+                <li>插入</li>
+                <li>页面布局</li>
+                <li>公式</li>
+                <li>数据</li>
+                <li>审阅</li>
+                <li>视图</li>
+                <li>加载项</li>
+            </ul>
+            <!--面板-->
+            <div id="tabs_body">
+                <!--tab1内容(开始 )-->
+                <div style="display: block" class="tabs_container">
+                    <!--tabs1_1(剪贴板)-->
+                    <div class="tabs1_1">
+                        <div class="tabs_body_top">
+                            <!--1/粘贴-->
+                            <div class="lt bg-color" id="zhantieban-bg1">
+                                <div id="jiantieban-tubiao1"></div>
+                            </div>
+                            <!--剪切,复制，格式刷-->
+                            <div class="lt">
+                                <!--2/剪切-->
+                                <div  id="jiantieban-bg2" class="bg-color">
+                                    <div id="jiantieban-tubiao2" ></div>
+                                </div>
+                                <!--3/复制-->
+                                <div  id="jiantieban-bg3" class="bg-color">
+                                    <div id="jiantieban-tubiao3" ></div>
+                                </div>
+                                <!--4/格式刷-->
+                                <div  id="jiantieban-bg4" class="bg-color">
+                                    <div id="jiantieban-tubiao4" ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            剪贴板
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tabs1_2(字体)-->
+                    <div class="tabs1_2">
+                        <div class="tabs_body_top">
+                            <div id="ziti-top">
+                                <input value="宋体 (中文正文)" id="ziti-songti" class="lt">
+                                <div class="lt" id="songti-caret"></div>
+                                <input value="11" id="ziti-zihao" class="lt">
+                                <div class="lt" id="zihao-caret"></div>
+                                <!--字体上排图标-->
+                                <!--1-->
+                                <div id="ziti-bg1" class="bg-color1 lt">
+                                    <div id="ziti-tubiao1"></div>
+                                </div>
+                                <!--2-->
+                                <div id="ziti-bg2" class="bg-color1 lt">
+                                    <div id="ziti-tubiao2"></div>
+                                </div>
+                            </div>
+                            <div id="ziti-bottom">
+                                <!--3-->
+                                <div id="ziti-bg3" class="bg-color1 lt">
+                                    <div id="ziti-tubiao3"></div>
+                                </div>
+                                <!--4-->
+                                <div id="ziti-bg4" class="bg-color1 lt">
+                                    <div id="ziti-tubiao4"></div>
+                                </div>
+                                <!--5/6-->
+                                <div id="ziti-tubiao-5-6" class="lt">
+                                    <div id="ziti-tubiao5" class="lt"></div>
+                                    <div id="ziti-tubiao6" class="lt"></div>
+                                </div>
+
+                                <!--7/8-->
+                                <div id="ziti-tubiao-7-8" class="lt">
+                                    <div id="ziti-tubiao7" class="lt"></div>
+                                    <div id="ziti-tubiao8" class="lt"></div>
+                                </div>
+                                <!--9/10-->
+                                <div id="ziti-tubiao-9-10" class="lt">
+                                    <div id="ziti-tubiao9" class="lt"></div>
+                                    <div id="ziti-tubiao10" class="lt"></div>
+                                </div>
+                                <!--11/12-->
+                                <div id="ziti-tubiao-11-12" class="lt">
+                                    <div id="ziti-tubiao11" class="lt"></div>
+                                    <div id="ziti-tubiao12" class="lt"></div>
+                                </div>
+                                <!--13/14-->
+                                <div id="ziti-tubiao-13-14" class="lt">
+                                    <div id="ziti-tubiao13" class="lt"></div>
+                                    <div id="ziti-tubiao14" class="lt"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            字体
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tabs1_3(对齐方式)-->
+                    <div class="tabs1_3">
+                        <div class="tabs_body_top">
+                           <div id="duiqifangshi-left" class="lt">
+                               <div>
+                                   <!--1-->
+                                   <div id="duiqifangshi-bg1" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao1"></div>
+                                   </div>
+                                   <!--2-->
+                                   <div id="duiqifangshi-bg2" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao2"></div>
+                                   </div>
+                                   <!--3-->
+                                   <div id="duiqifangshi-bg3" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao3"></div>
+                                   </div>
+                                   <!--4-->
+                                   <div id="duiqifangshi-bg4" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao4"></div>
+                                   </div>
+                               </div>
+                               <div>
+                                   <!--5-->
+                                   <div id="duiqifangshi-bg5" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao5"></div>
+                                   </div>
+                                   <!--6-->
+                                   <div id="duiqifangshi-bg6" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao6"></div>
+                                   </div>
+                                   <!--7-->
+                                   <div id="duiqifangshi-bg7" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao7"></div>
+                                   </div>
+                                   <!--8-->
+                                   <div id="duiqifangshi-bg8" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao8"></div>
+                                   </div>
+                                   <!--9-->
+                                   <div id="duiqifangshi-bg9" class="bg-color1 lt">
+                                       <div id="duiqifangshi-tubiao9"></div>
+                                   </div>
+                               </div>
+                           </div>
+                            <!--分隔线-->
+                            <div id="duiqifangshi-divide" class="lt"></div>
+                            <div id="duiqifangshi-right" class="lt">
+                                <!--10/自动换行-->
+                                <div id="duiqifangshi-bg10" class="bg-color">
+                                    <div id="duiqifangshi-tubiao10"></div>
+                                </div>
+                                <!--11/合并后居中-->
+                                <div id="duiqifangshi-bg11" class="bg-color">
+                                    <div id="duiqifangshi-tubiao11"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            对齐方式
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tabs1_4(数字)-->
+                    <div class="tabs1_4">
+                        <div class="tabs_body_top">
+                            <div id="shuzi-top">
+                                <input value="常规" id="shuzi-geshi" class="lt">
+                                <div class="lt" id="shuzi-caret"></div>
+                            </div>
+                            <div id="shuzi-bottom">
+                                <!--1/2-->
+                                <div id="shuzi-tubiao-1-2" class="lt">
+                                    <div id="shuzi-tubiao1" class="lt"></div>
+                                    <div id="shuzi-tubiao2" class="lt"></div>
+                                </div>
+                                <!--3-->
+                                <div id="shuzi-bg3" class="bg-color1 lt">
+                                    <div id="shuzi-tubiao3"></div>
+                                </div>
+                                <!--4-->
+                                <div id="shuzi-bg4" class="bg-color1 lt">
+                                    <div id="shuzi-tubiao4"></div>
+                                </div>
+                                <!--5-->
+                                <div id="shuzi-bg5" class="bg-color1 lt">
+                                    <div id="shuzi-tubiao5"></div>
+                                </div>
+                                <!--6-->
+                                <div id="shuzi-bg6" class="bg-color1 lt">
+                                    <div id="shuzi-tubiao6"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            数字
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tabs1_5(样式)-->
+                    <div class="tabs1_5">
+                        <div class="tabs_body_top">
+                            <!--1/条件格式-->
+                            <div id="yangshi-bg1" class="lt bg-color">
+                                <div id="yangshi-tubiao1"></div>
+                            </div>
+                            <!--2/套用表格格式-->
+                            <div  id="yangshi-bg2" class="lt bg-color">
+                                <div id="yangshi-tubiao2" ></div>
+                            </div>
+                            <!--3/单元格格式-->
+                            <div  id="yangshi-bg3" class="lt bg-color">
+                                <div id="yangshi-tubiao3" ></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                           样式
+                        </div>
+                    </div>
+                    <!--tabs1_6(单元格)-->
+                    <div class="tabs1_6">
+                        <div class="tabs_body_top">
+                            <!--1/插入-->
+                            <div id="danyuange-bg1" class="lt bg-color">
+                                <div id="danyuange-tubiao1"></div>
+                            </div>
+                            <!--2/删除-->
+                            <div  id="danyuange-bg2" class="lt bg-color">
+                                <div id="danyuange-tubiao2" ></div>
+                            </div>
+                            <!--3/格式-->
+                            <div  id="danyuange-bg3" class="lt bg-color">
+                                <div id="danyuange-tubiao3" ></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            单元格
+                        </div>
+                    </div>
+                    <!--tabs1_7(编辑)-->
+                    <div class="tabs1_7">
+                        <div class="tabs_body_top">
+                            <div class="lt">
+                                <!--1/自动求和-->
+                                <div id="bianji-bg1" class="bg-color">
+                                    <div id="bianji-tubiao1"></div>
+                                </div>
+                                <!--2/填充-->
+                                <div  id="bianji-bg2" class="bg-color">
+                                    <div id="bianji-tubiao2" ></div>
+                                </div>
+                                <!--3/清除-->
+                                <div  id="bianji-bg3" class="bg-color">
+                                    <div id="bianji-tubiao3" ></div>
+                                </div>
+                            </div>
+                            <!--4/排序和筛选-->
+                            <div  id="bianji-bg4" class="lt bg-color">
+                                <div id="bianji-tubiao4" ></div>
+                            </div>
+                            <!--5/查找和选择-->
+                            <div  id="bianji-bg5" class="lt bg-color">
+                                <div id="bianji-tubiao5" ></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            编辑
+                        </div>
+                    </div>
+                </div>
+                <!--tab2内容(插入)-->
+                <div class="tabs_container">
+                    <!--tabs2_1(表)-->
+                    <div class="tabs2_1">
+                        <div class="tabs_body_top">
+                            <!--1/数据透视表-->
+                            <div id="biao-bg1" class="bg-color lt">
+                                <div id="biao-tubiao1"></div>
+                            </div>
+                            <!--2/表-->
+                            <div id="biao-bg2" class="bg-color lt">
+                                <div id="biao-tubiao2"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            表
+                        </div>
+                    </div>
+                    <!--tabs2_2(插图)-->
+                    <div class="tabs2_2">
+                        <div class="tabs_body_top">
+                            <!--图片/1-->
+                            <div  id="chatu-bg1" class="bg-color lt">
+                                <div id="chatu-tubiao1" ></div>
+                            </div>
+                            <!--剪贴画/2-->
+                            <div  id="chatu-bg2" class="bg-color lt">
+                                <div id="chatu-tubiao2" ></div>
+                            </div>
+                            <!--形状/3-->
+                            <div  id="chatu-bg3" class="bg-color lt">
+                                <div id="chatu-tubiao3" ></div>
+                            </div>
+                            <!--SmartArt/4-->
+                            <div  id="chatu-bg4" class="bg-color lt">
+                                <div id="chatu-tubiao4" ></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            插图
+                        </div>
+                    </div>
+                    <!--tabs2_3(图表)-->
+                    <div class="tabs2_3">
+                        <div class="tabs_body_top">
+                            <!--1/柱形图-->
+                            <div  id="tubiao-bg1" class="bg-color lt">
+                                <div id="tubiao-tubiao1" ></div>
+                            </div>
+                            <!--2/折线图-->
+                            <div  id="tubiao-bg2" class="bg-color lt">
+                                <div id="tubiao-tubiao2" ></div>
+                            </div>
+                            <!--3/饼图-->
+                            <div  id="tubiao-bg3" class="bg-color lt">
+                                <div id="tubiao-tubiao3" ></div>
+                            </div>
+                            <!--4/条形图-->
+                            <div  id="tubiao-bg4" class="bg-color lt">
+                                <div id="tubiao-tubiao4" ></div>
+                            </div>
+                            <!--5/面积图-->
+                            <div  id="tubiao-bg5" class="bg-color lt">
+                                <div id="tubiao-tubiao5" ></div>
+                            </div>
+                            <!--6/散点图-->
+                            <div  id="tubiao-bg6" class="bg-color lt">
+                                <div id="tubiao-tubiao6" ></div>
+                            </div>
+                            <!--7/其他图表-->
+                            <div  id="tubiao-bg7" class="bg-color lt">
+                                <div id="tubiao-tubiao7" ></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            图标
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tabs2_4(链接)-->
+                    <div class="tabs2_4">
+                        <div class="tabs_body_top">
+                            <!--1/超链接-->
+                            <div  id="charu-lianjie-bg1" class="bg-color lt">
+                                <div id="charu-lianjie-tubiao1" ></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            链接
+                        </div>
+                    </div>
+                    <!--tabs2_5(文本)-->
+                    <div class="tabs2_5">
+                        <div class="tabs_body_top">
+                            <!--1/文本框-->
+                            <div  id="wenben-bg1" class="bg-color lt">
+                                <div id="wenben-tubiao1" ></div>
+                            </div>
+                            <!--2/页眉和页脚-->
+                            <div  id="wenben-bg2" class="bg-color lt">
+                                <div id="wenben-tubiao2" ></div>
+                            </div>
+                            <!--3/艺术字-->
+                            <div  id="wenben-bg3" class="bg-color lt">
+                                <div id="wenben-tubiao3" ></div>
+                            </div>
+                            <!--4/签名行-->
+                            <div  id="wenben-bg4" class="bg-color lt">
+                                <div id="wenben-tubiao4" ></div>
+                            </div>
+                            <!--5/对象-->
+                            <div  id="wenben-bg5" class="bg-color lt">
+                                <div id="wenben-tubiao5" ></div>
+                            </div>
+                            <!--6/符号-->
+                            <div  id="wenben-bg6" class="bg-color lt">
+                                <div id="wenben-tubiao6" ></div>
+                            </div>
+
+                        </div>
+                        <div class="tabs_body_bottom">
+                            文本
+                        </div>
+                    </div>
+                    <!--tabs2_6(特殊符号)-->
+                    <div class="tabs2_6">
+                        <div class="tabs_body_top">
+                            <!--第一排符号-->
+                            <div id="teshufuhao-1">
+                                <!--逗号/1-->
+                                <div id="teshufuhao-bg1" class="bg-color lt">
+                                    <div id="teshufuhao-tubiao1"></div>
+                                </div>
+                                <!--句号/2-->
+                                <div id="teshufuhao-bg2" class="bg-color lt">
+                                    <div id="teshufuhao-tubiao2"></div>
+                                </div>
+                                <!--顿号/3-->
+                                <div id="teshufuhao-bg3" class="bg-color lt">
+                                    <div id="teshufuhao-tubiao3"></div>
+                                </div>
+                            </div>
+                            <!--第二排符号-->
+                            <div id="teshufuhao-2">
+                                <!--分号-->
+                                <div id="teshufuhao-bg4" class="bg-color lt">
+                                    <div id="teshufuhao-tubiao4" ></div>
+                                </div>
+                                <!--冒号-->
+                                <div id="teshufuhao-bg5" class="bg-color lt">
+                                    <div id="teshufuhao-tubiao5"></div>
+                                </div>
+                                <!--问号-->
+                                <div id="teshufuhao-bg6" class="bg-color lt">
+                                    <div id="teshufuhao-tubiao6"></div>
+                                </div>
+                            </div>
+                            <!--第三排符号/7-->
+                            <div id="teshufuhao-bg7" class="bg-color">
+                                <div id="teshufuhao-tubiao7" ></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            特殊符号
+                        </div>
+                    </div>
+                </div>
+                <!--tab3内容(页面布局)-->
+                <div class="tabs_container">
+                    <!--tabs3_1(主题)-->
+                    <div class="tabs3_1">
+                        <div class="tabs_body_top">
+                            <!--主题/1-->
+                            <div id="zhuti-bg1" class="bg-color lt">
+                                <div id="zhuti-tubiao1"></div>
+                            </div>
+                            <div class="lt">
+                                <!--颜色/2-->
+                                <div id="zhuti-bg2" class="bg-color">
+                                    <div id="zhuti-tubiao2"></div>
+                                </div>
+                                <!--字体/3-->
+                                <div id="zhuti-bg3" class="bg-color">
+                                    <div id="zhuti-tubiao3"></div>
+                                </div>
+                                <!--效果/4-->
+                                <div id="zhuti-bg4" class="bg-color">
+                                    <div id="zhuti-tubiao4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            主题
+                        </div>
+                    </div>
+                    <!--tabs3_2(页面设置)-->
+                    <div class="tabs3_2">
+                        <div class="tabs_body_top">
+                            <!--1/页边距-->
+                            <div id="yemianshezhi-bg1" class="bg-color lt">
+                                <div id="yemianshezhi-tubiao1"></div>
+                            </div>
+                            <!--2/纸张方向-->
+                            <div id="yemianshezhi-bg2" class="bg-color lt">
+                                <div id="yemianshezhi-tubiao2"></div>
+                            </div>
+                            <!--3/纸张大小-->
+                            <div id="yemianshezhi-bg3" class="bg-color lt">
+                                <div id="yemianshezhi-tubiao3"></div>
+                            </div>
+                            <!--4/打印区域-->
+                            <div id="yemianshezhi-bg4" class="bg-color lt">
+                                <div id="yemianshezhi-tubiao4"></div>
+                            </div>
+                            <!--5/分隔符-->
+                            <div id="yemianshezhi-bg5" class="bg-color lt">
+                                <div id="yemianshezhi-tubiao5"></div>
+                            </div>
+                            <!--6/背景-->
+                            <div id="yemianshezhi-bg6" class="bg-color lt">
+                                <div id="yemianshezhi-tubiao6"></div>
+                            </div>
+                            <!--7/打印标题-->
+                            <div id="yemianshezhi-bg7" class="bg-color lt">
+                                <div id="yemianshezhi-tubiao7"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                           页面设置
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tabs3_3(调整为合适大小)-->
+                    <div class="tabs3_3">
+                        <div class="tabs_body_top" id="tiaozhengweiheshidaxiao">
+                            <div>
+                                <!--1/宽度-->
+                                <div id="tiaozhengweiheshidaxiao-tubiao1" class="lt"></div>
+                                <input type="text" value="自动" class="lt" id="tiaozhengweiheshidaxiao-kuandu">
+                                <div id="tiaozhengweiheshidaxiao-tubiao2" class="lt"></div>
+                            </div>
+                            <div>
+                                <!--2/高度-->
+                                <div id="tiaozhengweiheshidaxiao-tubiao3" class="lt"></div>
+                                <input type="text" value="自动" class="lt" id="tiaozhengweiheshidaxiao-gaodu">
+                                <div id="tiaozhengweiheshidaxiao-tubiao4" class="lt"></div>
+                            </div>
+                            <div>
+                                <!--3/缩放比例-->
+                                <div id="tiaozhengweiheshidaxiao-tubiao5" class="lt"></div>
+                                <input type="text" value="100%" class="lt" id="tiaozhengweiheshidaxiao-suofangbili">
+                                <div class="lt">
+                                    <div id="tiaozhengweiheshidaxiao-tubiao6"></div>
+                                    <div id="tiaozhengweiheshidaxiao-tubiao7"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            调整为合适大小
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tabs3_4(工作表选项)-->
+                    <div class="tabs3_4">
+                        <div class="tabs_body_top">
+                            <!--网格线-->
+                            <div class="lt" id="gongzuobiaoxuanxiang-left">
+                                <div id="gongzuobiaoxuanxiang-tubiao1"></div>
+                                <div>
+                                    <input type="checkbox" id="wanggexian-chakan">
+                                    <label for="wanggexian-chakan">查看</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="wanggexian-dayin">
+                                    <label for="wanggexian-dayin">打印</label>
+                                </div>
+                            </div>
+                            <!--分隔线-->
+                            <div id="gongzuobiaoxuanxiang-divide" class="lt"></div>
+                            <!--标题-->
+                            <div class="lt" id="gongzuobiaoxuanxiang-right">
+                                <div id="gongzuobiaoxuanxiang-tubiao2"></div>
+                                <div>
+                                    <input type="checkbox" id="baioti-chakan">
+                                    <label for="baioti-chakan">查看</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="baioti-dayin">
+                                    <label for="baioti-dayin">打印</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            工作表选项
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tabs3_5(排列)-->
+                    <div class="tabs3_5">
+                        <div class="tabs_body_top">
+                            <!--1/置于顶层-->
+                            <div id="pailie-bg1" class="bg-color lt">
+                                <div id="pailie-tubiao1"></div>
+                            </div>
+                            <!--2/置于底层-->
+                            <div id="pailie-bg2" class="bg-color lt">
+                                <div id="pailie-tubiao2"></div>
+                            </div>
+                            <!--3/选择窗格-->
+                            <div id="pailie-bg3" class="bg-color lt">
+                                <div id="pailie-tubiao3"></div>
+                            </div>
+                            <!--4/对齐-->
+                            <div id="pailie-bg4" class="bg-color lt">
+                                <div id="pailie-tubiao4"></div>
+                            </div>
+                            <!--5/组合-->
+                            <div id="pailie-bg5" class="bg-color lt">
+                                <div id="pailie-tubiao5"></div>
+                            </div>
+                            <!--6/旋转-->
+                            <div id="pailie-bg6" class="bg-color lt">
+                                <div id="pailie-tubiao6"></div>
+                            </div>
+
+                        </div>
+                        <div class="tabs_body_bottom">
+                            排列
+                        </div>
+                    </div>
+                </div>
+                <!--tab4内容(公式)-->
+                <div class="tabs_container">
+                    <!--tabs4_1(函数库)-->
+                    <div class="tabs4_1">
+                        <div class="tabs_body_top">
+                            <!--1/插入函数-->
+                            <div id="hanshuku-bg1" class="bg-color lt">
+                                <div id="hanshuku-tubiao1"></div>
+                            </div>
+                            <!--分隔线-->
+                            <div id="hanshuku-divide" class="lt"></div>
+                            <!--2/自动求和-->
+                            <div id="hanshuku-bg2" class="bg-color lt">
+                                <div id="hanshuku-tubiao2"></div>
+                            </div>
+                            <!--3/最近使用的函数-->
+                            <div id="hanshuku-bg3" class="bg-color lt">
+                                <div id="hanshuku-tubiao3"></div>
+                            </div>
+                            <!--4/财务-->
+                            <div id="hanshuku-bg4" class="bg-color lt">
+                                <div id="hanshuku-tubiao4"></div>
+                            </div>
+                            <!--5/逻辑-->
+                            <div id="hanshuku-bg5" class="bg-color lt">
+                                <div id="hanshuku-tubiao5"></div>
+                            </div>
+                            <!--6/文本-->
+                            <div id="hanshuku-bg6" class="bg-color lt">
+                                <div id="hanshuku-tubiao6"></div>
+                            </div>
+                            <!--7/日期和时间-->
+                            <div id="hanshuku-bg7" class="bg-color lt">
+                                <div id="hanshuku-tubiao7"></div>
+                            </div>
+                            <!--8/查找与引用-->
+                            <div id="hanshuku-bg8" class="bg-color lt">
+                                <div id="hanshuku-tubiao8"></div>
+                            </div>
+                            <!--9/数学与三角函数-->
+                            <div id="hanshuku-bg9" class="bg-color lt">
+                                <div id="hanshuku-tubiao9"></div>
+                            </div>
+                            <!--10/其他函数-->
+                            <div id="hanshuku-bg10" class="bg-color lt">
+                                <div id="hanshuku-tubiao10"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                           函数库
+                        </div>
+                    </div>
+                    <!--tabs4_2(定义的名称)-->
+                    <div class="tabs4_2">
+                        <div class="tabs_body_top">
+                            <!--1/名称管理器-->
+                            <div id="dingyidemingcheng-bg1" class="bg-color lt">
+                                <div id="dingyidemingcheng-tubiao1"></div>
+                            </div>
+                            <div class="lt">
+                                <!--2/定义名称-->
+                                <div id="dingyidemingcheng-bg2" class="bg-color">
+                                    <div id="dingyidemingcheng-tubiao2"></div>
+                                </div>
+                                <!--3/用于公式-->
+                                <div id="dingyidemingcheng-bg3" class="bg-color">
+                                    <div id="dingyidemingcheng-tubiao3"></div>
+                                </div>
+                                <!--4/根据所选内容创建-->
+                                <div id="dingyidemingcheng-bg4" class="bg-color">
+                                    <div id="dingyidemingcheng-tubiao4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            定义的名称
+                        </div>
+                    </div>
+                    <!--tabs4_3(公式审核)-->
+                    <div class="tabs4_3">
+                        <div class="tabs_body_top">
+                            <div class="lt">
+                                <!--1/追踪引用单元格-->
+                                <div id="gongshishenhe-bg1" class="bg-color">
+                                    <div id="gongshishenhe-tubiao1"></div>
+                                </div>
+                                <!--2/追踪从属单元格-->
+                                <div id="gongshishenhe-bg2" class="bg-color">
+                                    <div id="gongshishenhe-tubiao2"></div>
+                                </div>
+                                <!--3/移去箭头-->
+                                <div id="gongshishenhe-bg3" class="bg-color">
+                                    <div id="gongshishenhe-tubiao3"></div>
+                                </div>
+                            </div>
+                            <div class="lt">
+                                <!--4/显示公式-->
+                                <div id="gongshishenhe-bg4" class="bg-color">
+                                    <div id="gongshishenhe-tubiao4"></div>
+                                </div>
+                                <!--5/错误检查-->
+                                <div id="gongshishenhe-bg5" class="bg-color">
+                                    <div id="gongshishenhe-tubiao5"></div>
+                                </div>
+                                <!--6/公式求值-->
+                                <div id="gongshishenhe-bg6" class="bg-color">
+                                    <div id="gongshishenhe-tubiao6"></div>
+                                </div>
+                            </div>
+                            <!--分隔线-->
+                            <div id="gongshishenhe-divide" class="lt"></div>
+                            <!--7/监视窗口-->
+                            <div id="gongshishenhe-bg7" class="lt bg-color">
+                                <div id="gongshishenhe-tubiao7"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            公式审核
+                        </div>
+                    </div>
+                    <!--tabs4_4(计算)-->
+                    <div class="tabs4_4">
+                        <div class="tabs_body_top">
+                            <!--1/计算选项-->
+                            <div id="jisuan-bg1" class="lt bg-color">
+                                <div id="jisuan-tubiao1"></div>
+                            </div>
+                            <div class="lt">
+                                <!--2/开始计算-->
+                                <div id="jisuan-bg2" class="bg-color">
+                                    <div id="jisuan-tubiao2"></div>
+                                </div>
+                                <!--3/计算工作表-->
+                                <div id="jisuan-bg3" class="bg-color">
+                                    <div id="jisuan-tubiao3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            计算
+                        </div>
+                    </div>
+                </div>
+                <!--tab5内容(数据)-->
+                <div class="tabs_container">
+                    <!--tabs5_1(获取外部数据)-->
+                    <div class="tabs5_1">
+                        <div class="tabs_body_top">
+                            <!--1/自Access-->
+                            <div id="huoquwaibushuju-bg1" class="bg-color lt">
+                                <div id="huoquwaibushuju-tubiao1"></div>
+                            </div>
+                            <!--2/自网站-->
+                            <div id="huoquwaibushuju-bg2" class="bg-color lt">
+                                <div id="huoquwaibushuju-tubiao2"></div>
+                            </div>
+                            <!--3/自文本-->
+                            <div id="huoquwaibushuju-bg3" class="bg-color lt">
+                                <div id="huoquwaibushuju-tubiao3"></div>
+                            </div>
+                            <!--4/自其他来源-->
+                            <div id="huoquwaibushuju-bg4" class="bg-color lt">
+                                <div id="huoquwaibushuju-tubiao4"></div>
+                            </div>
+                            <!--分隔线-->
+                            <div id="huoquwaibushuju-divide" class="lt"></div>
+                            <!--5/现有连接-->
+                            <div id="huoquwaibushuju-bg5" class="bg-color lt">
+                                <div id="huoquwaibushuju-tubiao5"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                          获取外部数据
+                        </div>
+                    </div>
+                    <!--tabs5_2(连接)-->
+                    <div class="tabs5_2">
+                        <div class="tabs_body_top">
+                            <!--1/全部刷新-->
+                            <div id="shuju-lianjie-bg1" class="bg-color lt">
+                                <div id="shuju-lianjie-tubiao1"></div>
+                            </div>
+                            <div class="lt">
+                                <!--2/连接-->
+                                <div id="shuju-lianjie-bg2" class="bg-color">
+                                    <div id="shuju-lianjie-tubiao2"></div>
+                                </div>
+                                <!--3/属性-->
+                                <div id="shuju-lianjie-bg3" class="bg-color">
+                                    <div id="shuju-lianjie-tubiao3"></div>
+                                </div>
+                                <!--4/编辑链接-->
+                                <div id="shuju-lianjie-bg4" class="bg-color">
+                                    <div id="shuju-lianjie-tubiao4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            连接
+                        </div>
+                    </div>
+                    <!--tabs5_3(排序和筛选)-->
+                    <div class="tabs5_3">
+                        <div class="tabs_body_top">
+                            <div class="lt">
+                                <!--1/A/Z-->
+                                <div id="paixuheshaixuan-bg1" class="bg-color">
+                                    <div id="paixuheshaixuan-tubiao1"></div>
+                                </div>
+                                <!--2/Z/A-->
+                                <div id="paixuheshaixuan-bg2" class="bg-color">
+                                    <div id="paixuheshaixuan-tubiao2"></div>
+                                </div>
+                            </div>
+                            <!--3/排序-->
+                            <div id="paixuheshaixuan-bg3" class="lt bg-color">
+                                <div id="paixuheshaixuan-tubiao3"></div>
+                            </div>
+                            <!--分隔线-->
+                            <div id="paixuheshaixuan-divide" class="lt"></div>
+                            <!--4/筛选-->
+                            <div id="paixuheshaixuan-bg4" class="lt bg-color">
+                                <div id="paixuheshaixuan-tubiao4"></div>
+                            </div>
+                            <div class="lt">
+                                <!--5/筛选-->
+                                <div id="paixuheshaixuan-bg5" class="bg-color">
+                                    <div id="paixuheshaixuan-tubiao5"></div>
+                                </div>
+                                <!--6/重新应用-->
+                                <div id="paixuheshaixuan-bg6" class="bg-color">
+                                    <div id="paixuheshaixuan-tubiao6"></div>
+                                </div>
+                                <!--7/高级-->
+                                <div id="paixuheshaixuan-bg7" class="bg-color">
+                                    <div id="paixuheshaixuan-tubiao7"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            排序和筛选
+                        </div>
+                    </div>
+                    <!--tabs5_4(数据工具)-->
+                    <div class="tabs5_4">
+                        <div class="tabs_body_top">
+                            <!--1/分列-->
+                            <div id="shujugongju-bg1" class="lt bg-color">
+                                <div id="shujugongju-tubiao1"></div>
+                            </div>
+                            <!--2/删除重复项-->
+                            <div id="shujugongju-bg2" class="lt bg-color">
+                                <div id="shujugongju-tubiao2"></div>
+                            </div>
+                            <!--3/数据有效性-->
+                            <div id="shujugongju-bg3" class="lt bg-color">
+                                <div id="shujugongju-tubiao3"></div>
+                            </div>
+                            <!--4/合并计算-->
+                            <div id="shujugongju-bg4" class="lt bg-color">
+                                <div id="shujugongju-tubiao4"></div>
+                            </div>
+                            <!--5/假设分析-->
+                            <div id="shujugongju-bg5" class="lt bg-color">
+                                <div id="shujugongju-tubiao5"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            数据工具
+                        </div>
+                    </div>
+                    <!--tabs5_5(分级显示)-->
+                    <div class="tabs5_5">
+                        <div class="tabs_body_top">
+                            <!--1/组合-->
+                            <div id="fenjixianshi-bg1" class="lt bg-color">
+                                <div id="fenjixianshi-tubiao1"></div>
+                            </div>
+                            <!--2/取消组合-->
+                            <div id="fenjixianshi-bg2" class="lt bg-color">
+                                <div id="fenjixianshi-tubiao2"></div>
+                            </div>
+                            <!--3/分类汇总-->
+                            <div id="fenjixianshi-bg3" class="lt bg-color">
+                                <div id="fenjixianshi-tubiao3"></div>
+                            </div>
+                            <div class="lt">
+                                <!--4/显示明细数据-->
+                                <div id="fenjixianshi-bg4" class="bg-color">
+                                    <div id="fenjixianshi-tubiao4"></div>
+                                </div>
+                                <!--5/隐藏明细数据-->
+                                <div id="fenjixianshi-bg5" class="bg-color">
+                                    <div id="fenjixianshi-tubiao5"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            分级显示
+                            <div class="bg-color caret_bg">
+                                <div class="caret_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--tab6内容(审阅)-->
+                <div class="tabs_container">
+                    <!--tabs6_1(校对)-->
+                    <div class="tabs6_1">
+                        <div class="tabs_body_top">
+                            <!--1/拼写检查-->
+                            <div id="jiaodui-bg1" class="bg-color lt">
+                                <div id="jiaodui-tubiao1"></div>
+                            </div>
+                            <!--2/信息检索-->
+                            <div id="jiaodui-bg2" class="bg-color lt">
+                                <div id="jiaodui-tubiao2"></div>
+                            </div>
+                            <!--3/同义词库-->
+                            <div id="jiaodui-bg3" class="bg-color lt">
+                                <div id="jiaodui-tubiao3"></div>
+                            </div>
+                            <!--4/翻译-->
+                            <div id="jiaodui-bg4" class="bg-color lt">
+                                <div id="jiaodui-tubiao4"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            校对
+                        </div>
+                    </div>
+                    <!--tabs6_2(中文简繁转换)-->
+                    <div class="tabs6_2">
+                        <div class="tabs_body_top">
+                            <!--1/繁转简-->
+                            <div id="zhongwenjianfanzhuanhuan-bg1" class="bg-color">
+                                <div id="zhongwenjianfanzhuanhuan-tubiao1"></div>
+                            </div>
+                            <!--2/简转繁-->
+                            <div id="zhongwenjianfanzhuanhuan-bg2" class="bg-color">
+                                <div id="zhongwenjianfanzhuanhuan-tubiao2"></div>
+                            </div>
+                            <!--3/简繁转换-->
+                            <div id="zhongwenjianfanzhuanhuan-bg3" class="bg-color">
+                                <div id="zhongwenjianfanzhuanhuan-tubiao3"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            中文简繁转换
+                        </div>
+                    </div>
+                    <!--tabs6_3(批注)-->
+                    <div class="tabs6_3">
+                        <div class="tabs_body_top">
+                            <!--1/新建批注-->
+                            <div id="pizhu-bg1" class="bg-color lt">
+                                <div id="pizhu-tubiao1"></div>
+                            </div>
+                            <!--2/删除-->
+                            <div id="pizhu-bg2" class="bg-color lt">
+                                <div id="pizhu-tubiao2"></div>
+                            </div>
+                            <!--3/上一条-->
+                            <div id="pizhu-bg3" class="bg-color lt">
+                                <div id="pizhu-tubiao3"></div>
+                            </div>
+                            <!--4/下一条-->
+                            <div id="pizhu-bg4" class="bg-color lt">
+                                <div id="pizhu-tubiao4"></div>
+                            </div>
+                            <div class="lt">
+                                <!--5/显示/隐藏批注-->
+                                <div id="pizhu-bg5" class="bg-color">
+                                    <div id="pizhu-tubiao5"></div>
+                                </div>
+                                <!--6/显示所有批注-->
+                                <div id="pizhu-bg6" class="bg-color">
+                                    <div id="pizhu-tubiao6"></div>
+                                </div>
+                                <!--7/显示墨迹-->
+                                <div id="pizhu-bg7" class="bg-color">
+                                    <div id="pizhu-tubiao7"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            批注
+                        </div>
+                    </div>
+                    <!--tabs6_4(更改)-->
+                    <div class="tabs6_4">
+                        <div class="tabs_body_top">
+                            <!--1/保护工作表-->
+                            <div id="genggai-bg1" class="bg-color lt">
+                                <div id="genggai-tubiao1"></div>
+                            </div>
+                            <!--2/保护工作簿-->
+                            <div id="genggai-bg2" class="bg-color lt">
+                                <div id="genggai-tubiao2"></div>
+                            </div>
+                            <!--3/共享工作簿-->
+                            <div id="genggai-bg3" class="bg-color lt">
+                                <div id="genggai-tubiao3"></div>
+                            </div>
+                            <div class="lt">
+                                <!--4/保护并共享工作簿-->
+                                <div id="genggai-bg4" class="bg-color">
+                                    <div id="genggai-tubiao4"></div>
+                                </div>
+                                <!--5/允许用户编辑区域-->
+                                <div id="genggai-bg5" class="bg-color">
+                                    <div id="genggai-tubiao5"></div>
+                                </div>
+                                <!--6/修订-->
+                                <div id="genggai-bg6" class="bg-color">
+                                    <div id="genggai-tubiao6"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                           更改
+                        </div>
+                    </div>
+                </div>
+                <!--tab7内容(视图)-->
+                <div class="tabs_container">
+                    <!--tabs7_1(工作簿视图)-->
+                    <div class="tabs7_1">
+                        <div class="tabs_body_top">
+                            <!--1/普通-->
+                            <div id="gongzuobushitu-bg1" class="lt bg-color">
+                                <div id="gongzuobushitu-tubiao1"></div>
+                            </div>
+                            <!--2/页面布局-->
+                            <div id="gongzuobushitu-bg2" class="lt bg-color">
+                                <div id="gongzuobushitu-tubiao2"></div>
+                            </div>
+                            <!--3/分页预览-->
+                            <div id="gongzuobushitu-bg3" class="lt bg-color">
+                                <div id="gongzuobushitu-tubiao3"></div>
+                            </div>
+                            <!--分隔线-->
+                            <div id="gongzuobushitu-divide" class="lt"></div>
+                            <!--4/自定义视图-->
+                            <div id="gongzuobushitu-bg4" class="lt bg-color">
+                                <div id="gongzuobushitu-tubiao4"></div>
+                            </div>
+                            <!--5/全屏显示-->
+                            <div id="gongzuobushitu-bg5" class="lt bg-color">
+                                <div id="gongzuobushitu-tubiao5"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            工作簿视图
+                        </div>
+                    </div>
+                    <!--tabs7_2(显示/隐藏)-->
+                    <div class="tabs7_2">
+                        <div class="tabs_body_top">
+                            <div class="lt" id="xianshi-yincang-left">
+                                <div>
+                                    <input type="checkbox" id="biaochi">
+                                    <label for="biaochi">标尺</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="wanggexian">
+                                    <label for="wanggexian">网格线</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="xiaoxilan">
+                                    <label for="xiaoxilan">消息栏</label>
+                                </div>
+                            </div>
+                            <div class="lt" id="xianshi-yincang-right">
+                                <div>
+                                    <input type="checkbox" id="bianjilan">
+                                    <label for="bianjilan">编辑栏</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="biaoti">
+                                    <label for="biaoti">标题</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            显示/隐藏
+                        </div>
+                    </div>
+                    <!--tabs7_3(显示比例)-->
+                    <div class="tabs7_3">
+                        <div class="tabs_body_top">
+                            <!--1/显示比例-->
+                            <div id="xianshibili-bg1" class="bg-color lt">
+                                <div id="xianshibili-tubiao1"></div>
+                            </div>
+                            <!--2/100%-->
+                            <div id="xianshibili-bg2" class="bg-color lt">
+                                <div id="xianshibili-tubiao2"></div>
+                            </div>
+                            <!--3/缩放到选定区域-->
+                            <div id="xianshibili-bg3" class="bg-color lt">
+                                <div id="xianshibili-tubiao3"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            显示比例
+                        </div>
+                    </div>
+                    <!--tabs7_4(窗口)-->
+                    <div class="tabs7_4">
+                        <div class="tabs_body_top">
+                            <!--1/新建窗口-->
+                            <div id="chuangko-bg1" class="bg-color lt">
+                                <div id="chuangko-tubiao1"></div>
+                            </div>
+                            <!--2/全部重排-->
+                            <div id="chuangko-bg2" class="bg-color lt">
+                                <div id="chuangko-tubiao2"></div>
+                            </div>
+                            <!--3/冻结窗格-->
+                            <div id="chuangko-bg3" class="bg-color lt">
+                                <div id="chuangko-tubiao3"></div>
+                            </div>
+                            <div class="lt">
+                                <!--4/拆分-->
+                                <div id="chuangko-bg4" class="bg-color">
+                                    <div id="chuangko-tubiao4"></div>
+                                </div>
+                                <!--5/隐藏-->
+                                <div id="chuangko-bg5" class="bg-color">
+                                    <div id="chuangko-tubiao5"></div>
+                                </div>
+                                <!--6/取消隐藏-->
+                                <div id="chuangko-bg6" class="bg-color">
+                                    <div id="chuangko-tubiao6"></div>
+                                </div>
+                            </div>
+                            <!--分隔线1-->
+                            <div class="lt" id="chuangko-divide1"></div>
+                            <div class="lt">
+                                <!--7/并排查看-->
+                                <div id="chuangko-bg7" class="bg-color">
+                                    <div id="chuangko-tubiao7"></div>
+                                </div>
+                                <!--8/同步滚动-->
+                                <div id="chuangko-bg8" class="bg-color">
+                                    <div id="chuangko-tubiao8"></div>
+                                </div>
+                                <!--9/重设窗口位置-->
+                                <div id="chuangko-bg9" class="bg-color">
+                                    <div id="chuangko-tubiao9"></div>
+                                </div>
+                            </div>
+                            <!--分隔线2-->
+                            <div class="lt" id="chuangko-divide2"></div>
+                            <!--10/保存工作区-->
+                            <div id="chuangko-bg10" class="bg-color lt">
+                                <div id="chuangko-tubiao10"></div>
+                            </div>
+                            <!--11/切换窗口-->
+                            <div id="chuangko-bg11" class="bg-color lt">
+                                <div id="chuangko-tubiao11"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            窗口
+                        </div>
+                    </div>
+                    <!--tabs7_5(宏)-->
+                    <div class="tabs7_5">
+                        <div class="tabs_body_top">
+                            <!--1/宏-->
+                            <div id="hong-bg1" class="bg-color">
+                                <div id="hong-tubiao1"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            宏
+                        </div>
+                    </div>
+                </div>
+                <!--tab8内容(加载项)-->
+                <div class="tabs_container">
+                    <!--tabs8_1(菜单命令)-->
+                    <div class="tabs8_1">
+                        <div class="tabs_body_top">
+                            <!--菜单命令-->
+                            <!--特殊符号/1-->
+                            <div id="caidanmingling-teshufuhao-bg1" class="lt bg-color">
+                                <div id="caidanmingling-chuangko-tubiao1"></div>
+                            </div>
+                        </div>
+                        <div class="tabs_body_bottom">
+                            菜单命令
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#office_button").click(function(){
+                $("#excel2007_office").toggle(".excel2007_office");
+            })
+//            $(document).click(function(e){
+//                var target=e.target||e.srcElement;
+//                if($("#excel2007_office")[0]!=target&&$("#office_button")[0]!=target){
+//                    $("#excel2007_office").hide();
+//                }
+//            });
+//        左部分菜单设置
+            $("#excel2007_office_menu").delegate("li","mouseover",function(e){
+                $(this).addClass("active").siblings().removeClass("active");
+                var index=$(this).index();
+                $("#excel2007_office_panel>div").eq(index).addClass("show").siblings().removeClass("show");
+            });
+            $("#excel2007_office_menu>li:has(span)").hover(function(e){
+                $(this).children("span").css("borderColor","#ddd");
+            },function(){$(this).children("span").css("borderColor","transparent")});
+            //对面板右部分的设置
+            $(".show_body").delegate("li","mouseover",function(e){
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+//        对标签页进行设置
+//            鼠标移入移出事件设置
+            $("#tabs_header>li").hover(function(){
+                if(!$(this).hasClass("tabs_active")){
+                    $(this).addClass("tabs_show");
+                }
+            },function(){$(this).removeClass("tabs_show");})
+//            鼠标点击事件设置
+            $("#tabs_header").delegate("li","click",function(e){
+                $(this).addClass("tabs_active").siblings().removeClass("tabs_active");
+                var index=$(this).index();
+                $("#tabs_body>div").eq(index).css("display","block").siblings().css("display","none");
+            })
+//  menu-item所有背景图标
+            $(".bg-color").each(function(index,e){
+                if($(this).hasClass("disabled")==false){
+                    $(this).hover(function(){
+                        $(this).css({
+                            borderColor:"#c9b88e",
+                            backgroundImage:"linear-gradient(to bottom,#FEFCDC 0%,#FFD359 30%,#FFE8A0 100%)",
+                        });
+                    },function(){
+                        $(this).css({ borderColor:"transparent",background:"transparent",});
+                    });
+                }
+            })
+        })
+    </script>
+</body>
+</html>
